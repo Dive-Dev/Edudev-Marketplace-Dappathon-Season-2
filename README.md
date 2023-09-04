@@ -6,7 +6,7 @@
 To run the Sal-dApp locally, follow these steps:
 1. Clone the repository:
  ```bash
- git clone https://github.com/Vikash-8090-Yadav/Edudev-Learn-and-earn-platform-Dappathon-Season-2
+ git clone https://github.com/DiveDev21/Edudev-Learn-and-earn-platform-Dappathon-Season-2
  ```
  2. Navigate to the project directory:
 ```bash
