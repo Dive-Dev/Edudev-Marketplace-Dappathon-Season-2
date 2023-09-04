@@ -6,38 +6,139 @@ import LogoutButton from '../../LogoutButton';
 import ToggleAppearance from "../../ToggleAppearance";
 import Logo from '../../../public/assets/logo.svg'
 
-const Navbar = ({ handleLogout }) => {
-  const [showNav, setShowNav] = useState(false)
 
-  const toggleNavItems = () => {
-    setShowNav(!showNav)
-  }
 
+function NavLink({ to, children }) {
   return (
-    <nav className="w-screen h-[80px] px-[1.6rem] flex justify-between items-center">
-      <div className="flex gap-[3rem] items-center max-w-fit">
-        <Image src={Logo} alt='logo-sall-dapp' />
-        <ToggleAppearance />
+    <a href={to} className={`mx-4`}>
+      {children}
+    </a>
+  );
+}
+
+function MobileNav({ open, setOpen }) {
+  return (
+    <div
+      className={`absolute top-0 left-0 h-screen w-screen bg-white transform ${
+        open ? "-translate-x-0" : "-translate-x-full"
+      } transition-transform duration-300 ease-in-out bg-gray filter drop-shadow-md `}
+    >
+      <div className="flex items-center justify-center filter drop-shadow-md bg-gray h-20">
+        {/* logo container */}
+        <a className="styles.logo text-xl font-semibold" href="/">
+          OS.Dev
+        </a>
       </div>
-      <button className="w-[40px] h-[40px] rounded-[10px] border-[1px] border-solid border-[#d8d8d8] hidden max1:block" onClick={toggleNavItems}>
-        {showNav ? <span>&#10006;</span> : <span>&#9776;</span>}
-      </button>
-      <div className={showNav ? `flex max1:p-[1em] max1:block max1:absolute max1:right-[1rem] max1:top-[80px] max1:border-[1px] max1:border-solid max1:border-[#d8d8d8] max1:p[1em] max1:w-[250px] max1:bg-[#fff] max1:rounded-[20px] max1:z-[1] max1:shadow-[0_4px_10px_0_"#73737352"]` : `flex max1:hidden`}>
-        <ul className="flex items-center pr-[4em] gap-[4em] font-['Inter'] max1:flex-col max1:gap-[1em] max1:p-[0]">
-          <li className="cursor-pointer max1:w-full max1:rounded-[6px] max1:text-center max1:py-[.6em] max1:hover:bg-[#fcefff]"><Link>Home</Link></li>
-          <li className="cursor-pointer max1:w-full max1:rounded-[6px] max1:text-center max1:py-[.6em] max1:hover:bg-[#fcefff]"><Link>Dashboard</Link></li>
-          <li className="cursor-pointer max1:w-full max1:rounded-[6px] max1:text-center max1:py-[.6em] max1:hover:bg-[#fcefff]"><Link>About</Link></li>
-          <li className="cursor-pointer max1:w-full max1:rounded-[6px] max1:text-center max1:py-[.6em] max1:hover:bg-[#fcefff]"><Link>Support Me</Link></li>
-        </ul>
-        {/* Add the below code for the Connect wallet wallet button and Logout Button */}
-        <div className="flex gap-3 items-center max1:flex-col max1:pt-[.5em]">
-          <Web3Button balance="show" icon="hide" label="Connect Wallet" />
-          <LogoutButton handleLogout={handleLogout} />
+      <div className="flex flex-col ml-4">
+        <a
+          className="text-xl font-medium my-4"
+          href="/"
+          onClick={() =>
+            setTimeout(() => {
+              setOpen(!open);
+            }, 100)
+          }
+        >
+          About
+        </a>
+        <a
+          className="text-xl font-normal my-4"
+          href="/"
+          onClick={() =>
+            setTimeout(() => {
+              setOpen(!open);
+            }, 100)
+          }
+        >
+          Resources
+        </a>
+        <a
+          className="text-xl font-normal my-4"
+          href="/"
+          onClick={() =>
+            setTimeout(() => {
+              setOpen(!open);
+            }, 100)
+          }
+        >
+          Blog
+        </a>
+        <a
+          className="text-xl font-normal my-4"
+          href="/"
+          onClick={() =>
+            setTimeout(() => {
+              setOpen(!open);
+            }, 100)
+          }
+        >
+          Communities
+        </a>
+        <a
+          className="text-xl font-normal my-4"
+          href="/"
+          onClick={() =>
+            setTimeout(() => {
+              setOpen(!open);
+            }, 100)
+          }
+        >
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            LOGIN
+          </button>
+        </a>
+      </div>
+    </div>
+  );
+}
+
+export default function Navbar() {
+  const [open, setOpen] = useState(false);
+  return (
+    <nav className="flex sticky top-0 z-50 filter drop-shadow-md bg-white px-4 py-4 h-20 items-center ">
+      <MobileNav open={open} setOpen={setOpen} />
+      <div className="w-3/12 flex items-center">
+        <a className="text-4xl tracking-widest font-semibold" href="/">
+          {" "}
+          <h2>
+            <span className="text-blue-800">EDU.D</span>ev
+          </h2>
+        </a>
+      </div>
+
+      <div className="hidden md:flex text-1xl font-semibold font-serif ml-4 w-9/12 justify-end items-center ">
+        <NavLink to="/about-us">ABOUT US</NavLink>
+        <NavLink to="/resources">RESOURCES</NavLink>
+        <NavLink to="/blog">BLOG</NavLink>
+        <NavLink to="/communities">COMMUNITIES</NavLink>
+      </div>
+      <div className="w-9/12 flex justify-end items-center">
+      <Web3Button balance="show" icon="hide" label="Connect Wallet" />
+
+        <div
+          className="z-50 flex relative w-8 h-8 flex-col justify-between items-center md:hidden"
+          onClick={() => {
+            setOpen(!open);
+          }}
+        >
+          {/* hamburger button */}
+          <span
+            className={`h-1 w-full bg-black rounded-lg transform transition duration-300 ease-in-out ${
+              open ? "rotate-45 translate-y-3.5" : ""
+            }`}
+          />
+          <span
+            className={`h-1 w-full bg-black rounded-lg transition-all duration-300 ease-in-out ${
+              open ? "w-0" : "w-full"
+            }`}
+          />
+          <span
+            className={`h-1 w-full bg-black rounded-lg transform transition duration-300 ease-in-out ${
+              open ? "-rotate-45 -translate-y-3.5" : ""
+            }`}
+          />
         </div>
       </div>
     </nav>
   );
-};
-
-export default Navbar
-
+}

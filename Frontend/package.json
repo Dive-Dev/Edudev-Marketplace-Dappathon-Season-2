@@ -28,6 +28,7 @@
     "hardhat": "^2.12.6",
     "ipfs-http-client": "^57.0.3",
     "next": "^12.2.2",
+    "next-themes": "^0.2.1",
     "postcss-reporter": "^7.0.5",
     "react": "^17.0.0",
     "react-dom": "^17.0.2",

@@ -193,6 +193,9 @@ import { arbitrum, avalanche, bsc, fantom, mainnet, optimism, polygon, polygonMu
 import { useEffect, useState } from 'react'
 import { ColorRing } from 'react-loader-spinner';
 
+import { ThemeProvider } from "styled-components";
+
+
 if (!"2437b6ee508a24481ec9cfa2ff6ddadf") {
   throw new Error('You need to provide NEXT_PUBLIC_PROJECT_ID env variable')
 }
