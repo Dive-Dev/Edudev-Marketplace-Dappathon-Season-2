@@ -22,3 +22,6 @@ npm run dev
 ```
 5. Access the dApp:
 Open your web browser and visit http://localhost:3000 to interact with the SaL application.
+
+
+...
