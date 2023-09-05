@@ -24,9 +24,6 @@
     "apollo-boost": "^0.4.9",
     "classnames": "^2.3.2",
     "cors": "^2.8.5",
-    "gun": "^0.2020.1239",
-    "hardhat": "^2.12.6",
-    "ipfs-http-client": "^57.0.3",
     "next": "^12.2.2",
     "next-themes": "^0.2.1",
     "postcss-reporter": "^7.0.5",
@@ -52,15 +49,10 @@
     "web3modal": "^1.9.12"
   },
   "devDependencies": {
-    "@nomiclabs/hardhat-ethers": "^2.1.1",
-    "@nomiclabs/hardhat-waffle": "^2.0.3",
     "autoprefixer": "^10.4.11",
     "babel-plugin-styled-components": "^2.0.7",
-    "chai": "^4.3.6",
     "eslint": "8.20.0",
     "eslint-config-next": "12.2.2",
-    "ethereum-waffle": "^4.0.7",
-    "ethers": "^5.7.1",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.2.4"
   }

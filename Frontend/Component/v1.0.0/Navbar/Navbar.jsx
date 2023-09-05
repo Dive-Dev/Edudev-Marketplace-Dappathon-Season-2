@@ -95,7 +95,7 @@ function MobileNav({ open, setOpen }) {
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="flex sticky top-0 z-50 filter drop-shadow-md bg-white px-4 py-4 h-20 items-center ">
+    <nav className="flex sticky Navbar top-0 z-10 filter drop-shadow-2xl bg-white px-4 py-4 h-20 items-center ">
       <MobileNav open={open} setOpen={setOpen} />
       <div className="w-3/12 flex items-center">
         <a className="text-4xl tracking-widest font-semibold" href="/">
@@ -106,7 +106,7 @@ export default function Navbar() {
         </a>
       </div>
 
-      <div className="hidden md:flex text-1xl font-semibold font-serif ml-4 w-9/12 justify-end items-center ">
+      <div className="hidden md:flex text-9010FF text-1xl nav-item font-semibold font-serif ml-4 w-9/12 justify-end items-center ">
         <NavLink to="/about-us">ABOUT US</NavLink>
         <NavLink to="/resources">RESOURCES</NavLink>
         <NavLink to="/blog">BLOG</NavLink>

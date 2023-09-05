@@ -7,6 +7,7 @@ import Footer from "./v1.0.0/footer/footer";
 
 import HappyClient from "./v1.0.0/happyClient/HappyClient";
 
+
 export default function Layout({ children }) {
 
   console.log(children);
@@ -20,6 +21,7 @@ export default function Layout({ children }) {
         {/* Below commented component only works if Navbar is imported in _app.js || To be done so once ever component listed below is complete */}
         {/* <Navbar handleLogout={handleLogout}/> */} 
         <Navbar />
+
         <Hero/>   
         <About/> 
         <Problem/>
