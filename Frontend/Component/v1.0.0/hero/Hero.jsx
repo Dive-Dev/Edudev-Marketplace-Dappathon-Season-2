@@ -17,7 +17,7 @@ function Hero() {
     <div className="flex flex-col md:flex-row justify-between p-5 m-10">
       <div className="pt-20 pl-20">
         <div className="font-Poppins pt-8 pb-5 text-[#9010FF] text-3xl font-semibold">A decentralized application</div>
-        <MyDiv className="font-Poppins text-[#000000] font-extrabold text-6xl whitespace-normal leading-[1.2]">
+        <MyDiv className="font-Poppins text-[#FF5959] font-extrabold text-6xl whitespace-normal leading-[1.2]">
           To effectively<br />
           oversee and manage<br />
           their employees
