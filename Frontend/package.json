@@ -24,6 +24,7 @@
     "apollo-boost": "^0.4.9",
     "classnames": "^2.3.2",
     "cors": "^2.8.5",
+    "framer-motion": "^10.16.4",
     "next": "^12.2.2",
     "next-themes": "^0.2.1",
     "postcss-reporter": "^7.0.5",
