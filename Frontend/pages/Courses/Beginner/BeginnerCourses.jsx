@@ -1,5 +1,6 @@
 import React from 'react'
-import data from "./data";
+
+import data from "../../../Component/Data/Beginner/data"
 
 // The image folder is placed inside the public/courses ... Adviced to place all  the image folder there only
 
