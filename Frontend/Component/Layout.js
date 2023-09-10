@@ -7,6 +7,8 @@ import Footer from "./v1.0.0/footer/footer";
 
 import HappyClient from "./v1.0.0/happyClient/HappyClient";
 
+import Info from "./v1.0.0/Info/info";
+
 
 export default function Layout({ children }) {
 
