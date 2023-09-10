@@ -6,6 +6,7 @@ import Problem from "./v1.0.0/problemsolved/Problem";
 import Footer from "./v1.0.0/footer/footer";
 
 import HappyClient from "./v1.0.0/happyClient/HappyClient";
+import Explore from "./v1.0.0/Explore/Explore";
 
 import Info from "./v1.0.0/Info/info";
 
@@ -26,6 +27,7 @@ export default function Layout({ children }) {
 
         <Hero/>   
         <About/> 
+        <Explore/>
         <Problem/>
         <HappyClient/>
 

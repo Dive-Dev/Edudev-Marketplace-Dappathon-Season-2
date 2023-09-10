@@ -185,11 +185,7 @@ import "../styles/globals.css";
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { useRouter } from 'next/router' 
-import { EthereumClient, modalConnectors, walletConnectProvider } from '@web3modal/ethereum'
-import { Web3Modal } from '@web3modal/react'
-import { configureChains, createClient, WagmiConfig } from 'wagmi'
-import { goerli } from 'wagmi'
-import { arbitrum, avalanche, bsc, fantom, mainnet, optimism, polygon, polygonMumbai } from 'wagmi/chains'
+
 import { useEffect, useState } from 'react'
 import { ColorRing } from 'react-loader-spinner';
 
@@ -200,19 +196,24 @@ if (!"2437b6ee508a24481ec9cfa2ff6ddadf") {
   throw new Error('You need to provide NEXT_PUBLIC_PROJECT_ID env variable')
 }
 
-const projectId = "2437b6ee508a24481ec9cfa2ff6ddadf"
 
-// 2. Configure wagmi client
-const chains = [polygonMumbai,goerli,arbitrum, avalanche, bsc, fantom,optimism, polygon];
-const { provider } = configureChains(chains, [walletConnectProvider({ projectId })]);
-const wagmiClient = createClient({
+
+
+import { EthereumClient, w3mConnectors, w3mProvider } from '@web3modal/ethereum'
+import { Web3Modal } from '@web3modal/react'
+import { configureChains, createConfig, WagmiConfig } from 'wagmi'
+import {  arbitrum, avalanche, bsc, fantom, mainnet, optimism, polygon, polygonMumbai } from 'wagmi/chains'
+
+const chains = [arbitrum, mainnet, polygon]
+const projectId = '2437b6ee508a24481ec9cfa2ff6ddadf'
+
+const { publicClient } = configureChains(chains, [w3mProvider({ projectId })])
+const wagmiConfig = createConfig({
   autoConnect: true,
-  connectors: modalConnectors({ appName: 'web3Modal', chains }),
-  provider
-});
-
-// 3. Configure modal ethereum client
-export const ethereumClient = new EthereumClient(wagmiClient, chains);
+  connectors: w3mConnectors({ projectId, chains }),
+  publicClient
+})
+const ethereumClient = new EthereumClient(wagmiConfig, chains)
 
 function MyApp({ Component, pageProps = {} }) {
   const [loading, setLoading] = useState(true);
@@ -249,7 +250,7 @@ function MyApp({ Component, pageProps = {} }) {
                   <div>
                     <div className='big bg-indigo-800'></div>
                     
-                    <WagmiConfig client={wagmiClient}>
+                    <WagmiConfig config={wagmiConfig}>
                       {/* <Navbar handleLogout={handleLogout}/> */}
                       <Layout>
                         <Component {...pageProps} />

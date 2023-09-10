@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import heroIcon from "../../../public/About/In.png";
+
+import heroIcon from "../../../public/About/In2.png";
+
 import styled from "styled-components";
 
 const MyDiv = styled.div`
@@ -27,7 +29,7 @@ function Hero() {
         </div>
       </div>
       <div className="flex justify-center md:justify-end">
-        <Image src={heroIcon} height={556} width={742} alt="" />
+        <Image src={heroIcon} height={456} width={642} alt="" />
       </div>
     </div>
   );

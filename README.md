@@ -20,7 +20,7 @@ export NODE_OPTIONS=--openssl-legacy-provider
 
 4. Install the dependencies:
 ```bash
-npm install
+npm install --legacy-peer-deps
 ```
 5. Start the development server:
 ```bash
