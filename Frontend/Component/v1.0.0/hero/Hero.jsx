@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
+
 import heroIcon from "../../../public/About/In2.png";
+
 import styled from "styled-components";
 
 const MyDiv = styled.div`
