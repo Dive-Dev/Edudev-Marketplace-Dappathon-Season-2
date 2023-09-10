@@ -118,6 +118,92 @@ function HappyClient() {
             </div>
           ))}
         </Slider>
+        <div className="lg:mt-40 sm:mt-72 mt-40 sm:mb-52 mb-96 lg:mb-20 px-5 lg:px-0">
+        <div className="flex w-full flex-wrap relative gap-4 justify-between items-center">
+        <img
+            src="/About/Bottom/ether.svg"
+            className="h-12 lg:relative absolute xl:h-16 sm:top-0 top-[400px] sm:left-[10%] left-[12%] lg:left-0"
+            alt="ether"
+          />
+          <img
+            src="/About/Bottom/flutter.svg"
+            className="h-12 lg:relative absolute xl:h-16 sm:top-32 top-36 lg:top-0 sm:left-[45%] left-[40%] lg:left-0"
+            alt="flutter"
+          />
+          <img
+            src="/About/Bottom/kubernetes.svg"
+            className="h-12 lg:relative absolute xl:h-16 sm:left-[25%] left-[15%] top-60 sm:-top-28 lg:top-0 lg:left-0"
+            alt="kubernetes"
+          />
+          <img
+            src="/About/Bottom/router.png"
+            className="h-12 lg:relative absolute xl:h-16 sm:left-[25%] left-[15%] top-16 lg:top-0 lg:left-0"
+            alt="Redux"
+          />
+          <img
+            src="/About/Bottom/spheron.svg"
+            className="h-12 lg:relative absolute xl:h-16 sm:top-0 top-[400px] sm:left-[10%] left-[12%] lg:left-0"
+            alt="ether"
+          />
+          <img
+            src="/About/Bottom/github.svg"
+            className="lg:h-24 h-16 xl:h-32 lg:relative absolute sm:left-[45%] left-[37%] lg:left-0"
+            alt="Github"
+          />
+          <img
+            src="/About/Bottom/bunzz.png"
+            className="h-12 lg:relative absolute xl:h-16 sm:left-[82%] left-[66%] sm:top-0 top-[400px] lg:left-0"
+            alt="react"
+          />
+          <img
+            src="/About/Bottom/vscode.svg"
+            className="h-12 lg:relative absolute xl:h-16 left-[66%] lg:left-0 top-16 lg:top-0"
+            alt="vs code"
+          />
+           <img
+            src="/About/Bottom/react.svg"
+            className="h-12 lg:relative absolute xl:h-16 sm:left-[82%] left-[66%] sm:top-0 top-[400px] lg:left-0"
+            alt="react"
+          />
+          <img
+            src="/About/Bottom/polygon.svg"
+            className="h-12 lg:relative absolute xl:h-16 sm:left-[45%] left-[40%] lg:left-0 sm:-top-40 top-80 lg:top-0"
+            alt="polygon"
+          />
+          {/* Blur Effect */}
+          <div
+            className="hidden md:block -left-60 -top-[900px] absolute shrink-0 w-[200px] h-[200px]"
+            style={{
+              background: 'rgba(126, 231, 135, 0.3)',
+              filter: 'blur(182px)',
+            }}
+          />
+          {/* Blur Effect */}
+          <div
+            className="hidden md:block -right-60 -top-[700px] absolute shrink-0 w-[200px] h-[200px]"
+            style={{
+              background: 'rgba(126, 231, 135, 0.3)',
+              filter: 'blur(182px)',
+            }}
+          />
+          {/* Blur Effect */}
+          <div
+            className="hidden md:block -left-60 -top-20 absolute shrink-0 w-[200px] h-[200px]"
+            style={{
+              background: 'rgba(126, 231, 135, 0.3)',
+              filter: 'blur(182px)',
+            }}
+          />
+          {/* Blur Effect */}
+          <div
+            className="hidden md:block -right-60 -top-20 absolute shrink-0 w-[200px] h-[200px]"
+            style={{
+              background: 'rgba(126, 231, 135, 0.2)',
+              filter: 'blur(182px)',
+            }}
+          />
+        </div>
+      </div>
       </div>
     </>
   );

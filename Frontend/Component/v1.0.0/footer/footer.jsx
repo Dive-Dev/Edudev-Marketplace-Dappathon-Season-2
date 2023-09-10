@@ -14,6 +14,7 @@ import footerIcon from "../../images/footer-icon.png";
 function Footer() {
   return (
     <div className="footer ">
+       <div className="bg-[#7EE787] p-5 rounded-t-[19px]"></div>
       <div className="p-8  mt-10">
         <div className="max-w-7xl mx-auto">
           <div className="flex gap-4 justify-between max-md:flex-col max-md:text-center">
