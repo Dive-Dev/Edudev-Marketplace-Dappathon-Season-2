@@ -1,5 +1,5 @@
 import React from 'react'
-import data from "./data";
+import data from "/Data/data";
 import Head from 'next/head';
 // The image folder is placed inside the public/courses ... Adviced to place all  the image folder there only
 
