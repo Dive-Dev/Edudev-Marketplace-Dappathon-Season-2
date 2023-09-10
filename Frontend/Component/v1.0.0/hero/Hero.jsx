@@ -27,7 +27,7 @@ function Hero() {
         </div>
       </div>
       <div className="flex justify-center md:justify-end">
-        <Image src={heroIcon} height={556} width={742} alt="" />
+        <Image src={heroIcon} height={456} width={642} alt="" />
       </div>
     </div>
   );
