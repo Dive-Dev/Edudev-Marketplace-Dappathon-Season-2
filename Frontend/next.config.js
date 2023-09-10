@@ -3,10 +3,10 @@ const nextConfig = {
   reactStrictMode: true,
   // swcMinify: true,
   
-  images :{
-    unoptimized: true,
-    domains :["ipfs.infura.io","sal-dapp.infura-ipfs.io"]
-  }
+  images: {
+    maxWidth: 8192, // Set a maximum width
+    maxHeight: 8192, // Set a maximum height
+  },
 };
 
 module.exports = nextConfig
