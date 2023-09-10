@@ -16,6 +16,8 @@
     "@mui/material": "^5.11.5",
     "@mui/styled-engine-sc": "^5.8.0",
     "@mui/styles": "^5.10.9",
+    "@react-navigation/native": "^6.1.7",
+    "@react-navigation/native-stack": "^6.9.13",
     "@tailwindcss/line-clamp": "^0.4.2",
     "@web3modal/ethereum": "^2.7.1",
     "@web3modal/react": "^2.7.1",
