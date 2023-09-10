@@ -9,8 +9,8 @@ const AboutUs = () => {
         <title>Edu.Dev | About Us</title>
         <meta name="description" content="ClueLess About Us Page" />
       </Head>
-      <div className="green-gradient absolute left-[10%] top-[20%] scale-110"></div>
-      <div className="relative sm:p-10">
+      <div className=" green-gradient absolute left-[20%] top-[20%] scale-110"></div>
+      <div className="flex flex-col md:flex-row justify-between p-5 m-10 relative sm:p-10">
         <div className="hidden lg:block">
           <h1 className="text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mt-24">
             About <br /> Community.
@@ -52,7 +52,7 @@ const AboutUs = () => {
             />
           </div>
 
-          <div className="mt-72 bg-[#272D36] flex relative border rounded-[32px]">
+          <div className="justify-between p-5 m-10 mt-72 bg-[#272D36] flex relative border rounded-[32px]">
             <div className="flex items-center 2xl:gap-20 py-10">
               <img
                 src="/About/vision.svg"

@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lily+Script+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-
-/*  Text - FF5959  ornage- FF5959 prple - 9010FF*/
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+/*  Text - FF5959  ornage- FF5959 prple - 9010FF*/
+
+
 
 html{
   scroll-behavior: smooth;
@@ -108,3 +107,19 @@ For LogoutBUtton
 
 /* Navbar end */
 
+
+
+.green-gradient {
+  background: rgba(126, 231, 135, 0.54);
+  filter: blur(138.5px);
+  width: 234px;
+  height: 234px;
+}
+
+.nav_gradient {
+  background: linear-gradient(
+    152.97deg,
+    rgb(255, 255, 255) 0% rgba(255, 255, 255, 0) 100%
+  );
+  backdrop-filter: blur(20px);
+}
