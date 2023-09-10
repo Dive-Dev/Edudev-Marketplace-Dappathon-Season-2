@@ -9,7 +9,7 @@ const AboutUs = () => {
         <title>Edu.Dev | About Us</title>
         <meta name="description" content="ClueLess About Us Page" />
       </Head>
-      <div className=" green-gradient absolute left-[20%] top-[20%] scale-110"></div>
+      <div className=" green-gradient absolute left-[20%] top-[10%] "></div>
       <div className="flex flex-col md:flex-row justify-between p-5 m-10 relative sm:p-10">
         <div className="hidden lg:block">
           <h1 className="text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mt-24">
@@ -93,7 +93,7 @@ const AboutUs = () => {
             />
           </div>
           <p className="text-white font-normal text-[20px] px-3 tracking-wider">
-            Clueless in a virtual open-source community built with the motive of
+            EduDEv in a virtual open-source community built with the motive of
             “Learn and Grow”. We, as a community, encourage and guide
             enthusiasts to dive into the world of open-source. We provide the
             best resources available on the internet, write blogs that helps
@@ -127,8 +127,11 @@ const AboutUs = () => {
             <div className="bg-[#7EE787] p-5 rounded-t-[19px]"></div>
           </div>
         </div>
-
+              
       </div>
+      {/* <div className="flex sm:justify-end px-32 justify-start sm:h-40 h-28 ml-8 sm:ml-0 sm:mr-40">
+        <img src="/line1.png" alt="line3 " />
+      </div> */}
     </>
   );
 };

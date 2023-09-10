@@ -7,13 +7,12 @@ import Footer from "./v1.0.0/footer/footer";
 
 import HappyClient from "./v1.0.0/happyClient/HappyClient";
 import Explore from "./v1.0.0/Explore/Explore";
-
-import Info from "./v1.0.0/Info/info";
+import Card from "../Component/v1.0.0/Cards/Cards"
 
 
 export default function Layout({ children }) {
+  
 
-  console.log(children);
   return (
     <>
     <div>
@@ -25,11 +24,7 @@ export default function Layout({ children }) {
         {/* <Navbar handleLogout={handleLogout}/> */} 
         <Navbar />
 
-        <Hero/>   
-        <About/> 
-        <Explore/>
-        <Problem/>
-        <HappyClient/>
+        {children}
 
 
         <Footer/>

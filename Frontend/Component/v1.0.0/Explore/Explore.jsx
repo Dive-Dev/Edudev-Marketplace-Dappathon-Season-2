@@ -1,14 +1,17 @@
 // Open-Source page
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
-
+import React, { useEffect, useRef, useState } from 'react';
+import createGlobe from 'cobe';
 import Link from 'next/link';
 // import Explore1 from "/About/Explore.png";
-
+import { Box } from '@mui/material';
 
 
 function Explore() {
+
+
   return (
+    <>
     <div className="relative">
       <div className="flex lg:flex-row mt-5 sm:mt-0 box-border mx-w-screen justify-between items-center">
         <div className=" justify-between p-10 m-10  lg:w-[45%] space-y-5 sm:space-y-10">
@@ -39,11 +42,20 @@ function Explore() {
           <div className="green-gradient absolute z-0 lg:bottom-52 sm:bottom-24 bottom-16 lg:right-96"></div>
         </div>
       </div>
-      <div className="flex sm:justify-end justify-start sm:h-40 h-28 ml-8 sm:ml-0 sm:mr-40">
-        <img src="/line1.png" alt="line3 " />
-      </div>
-
+      <img
+        className="lg:block absolute -left--5 xl:top-[19rem] top-[18.2rem] hidden w-80 xl:w-96"
+        draggable="false"
+        src="/About/hero_line.png"
+        alt=""
+      />
+      <img
+        className="absolute -left-1 md:w-72 sm:w-64 w-52 sm:top-[14.5rem] top-[13.6rem] lg:hidden"
+        src="/About/Frame 3.svg"
+        alt=""
+      />
+      
     </div>
+    </>
   );
 }
 
