@@ -245,3 +245,38 @@ For LogoutBUtton
     border-radius: 0.2rem;
   }
 }
+
+
+
+
+.HeaderNavWrapper{
+
+display: flex;
+align-items: center;
+margin-left: 12px;
+background-color: blue;
+padding: 6px;
+height: 50%;
+border-radius: 10px;
+font-size: 22px;
+padding-top: 12px;
+
+}
+
+  .HeaderNavLinks{
+display: flex;
+padding-top: 12px;
+font-size: large;
+align-items: center;
+
+background-color:#00b712;
+
+font-family: 'Roboto';
+margin: 5px;
+border-radius: 10px;
+padding: 0 5px 0 5px;
+cursor: pointer;
+text-transform: uppercase;
+font-weight: bold;
+font-size: small;
+  }
