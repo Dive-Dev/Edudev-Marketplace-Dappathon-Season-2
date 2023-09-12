@@ -15,18 +15,12 @@ export default function Home(){
  
   return (
     <>
-     <Head>
-        <title>Edu.Dev Homepage</title>
-        <meta name="description" content="Home Page" />
-      </Head>
-      <div>
         <Hero/>
         <About/> 
         <Explore/>
         <Problem/>
        < Card/>
         <HappyClient/>  
-      </div>
     </>
   )
 }

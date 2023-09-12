@@ -47,7 +47,7 @@ const Card = () => {
                 <div className = "flex">
                   <button className = "px-4 py-2 mb-3 ml-3 text-xl rounded-md bg-green-500 text-white font-bold">
  
-                    <Link legacyBehavior href={"/Courses/Beginner/BeginnerCourses"}  className = "text-white font-extrabold">Basic Courses</Link>
+                    <Link legacyBehavior href={"/Market"}  className = "text-white font-extrabold">Basic Courses</Link>
                   </button>
                 </div>
               </div>

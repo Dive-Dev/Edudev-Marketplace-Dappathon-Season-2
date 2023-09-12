@@ -25,6 +25,8 @@
     "apollo-boost": "^0.4.9",
     "classnames": "^2.3.2",
     "cobe": "^0.6.3",
+    "ethers": "^5.7.2",
+    "ipfs-http-client": "^60.0.1",
     "next": "^12.2.2",
     "next-themes": "^0.2.1",
     "postcss-reporter": "^7.0.5",
@@ -45,7 +47,8 @@
     "swiper": "^9.0.5",
     "uuid": "^9.0.0",
     "viem": "^1.10.8",
-    "wagmi": "^1.4.1"
+    "wagmi": "^1.4.1",
+    "web3modal": "^1.9.12"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.11",
