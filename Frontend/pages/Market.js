@@ -2,6 +2,9 @@ import Head from 'next/head';
 import Home from "./marketplace";
 import Link from 'next/link';
 
+import Navbar from "../Component/Course/Nav";
+// import Navbar from "../Component/"
+
 const style = {
   wrapper: `relative`,
   container: `max-w-4xl mx-auto p-10 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300`,
@@ -16,13 +19,14 @@ const style = {
 function Market() {
   return (
     <div className="">
+      <Navbar/>
 
       <div className={style.wrapper}>
 
         <nav className={`${style.container} border-b p-10`}>
           <p className="text-7xl font-medium">Educational Dev Marketplace</p>
 
-          <div className="flex mt-4">
+          {/* <div className="flex mt-4">
             <Link href="/">
               <div className="mr-6 text-black-500">
                 HOME
@@ -48,7 +52,7 @@ function Market() {
                 COURSE Review
               </div>
             </Link>
-          </div>
+          </div> */}
           <Home/>
         </nav>
       </div>

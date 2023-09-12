@@ -1,57 +1,142 @@
-import styled from 'styled-components';
-import { useRouter } from 'next/router';
-import Link from 'next/link';
+import { useState } from "react";
 
-const HeaderNav = () => {
-  const Router = useRouter();
+import { Web3Button } from '@web3modal/react';
 
+
+
+
+function NavLink({ to, children }) {
   return (
-    <div className='HeaderNavWrapper'>
-      <Link passHref href={'/'}><div className="HeaderNavLinks"  active={Router.pathname == "/" ? true : false} >
-        HOME
-      </div></Link>
-      <Link passHref href={'/sellnft'}><div active={Router.pathname == "/sellnft" ? true : false} >
-        SELL COURSE
-      </div></Link>
-      <Link passHref href={'/mynft'}><div className="HeaderNavLinks"  active={Router.pathname == "/" ? true : false} >
-        My Course
-      </div></Link>
-      <Link passHref href={'/dashboard'}><div active={Router.pathname == "/" ? true : false} >
-        Dashboard
-      </div></Link>
-      <Link passHref href={'/Review'}><div active={Router.pathname == "/sellnft" ? true : false} >
-        REVIEW COURSE
-      </div></Link>
-      
+    <a href={to} className={`mx-4`}>
+      {children}
+    </a>
+  );
+}
+
+function MobileNav({ open, setOpen }) {
+  return (
+    <div
+      className={`absolute top-0 left-0 h-screen w-screen bg-white transform ${
+        open ? "-translate-x-0" : "-translate-x-full"
+      } transition-transform duration-300 ease-in-out bg-gray filter drop-shadow-md `}
+    >
+      <div className="flex items-center justify-center filter drop-shadow-md bg-gray h-20">
+        {/* logo container */}
+        <a className="styles.logo text-xl font-semibold" href="/">
+          OS.Dev
+        </a>
+      </div>
+      <div className="flex flex-col ml-4">
+        <a
+          className="text-xl font-medium my-4"
+          href="/"
+          onClick={() =>
+            setTimeout(() => {
+              setOpen(!open);
+            }, 100)
+          }
+        >
+          About
+        </a>
+        <a
+          className="text-xl font-normal my-4"
+          href="/"
+          onClick={() =>
+            setTimeout(() => {
+              setOpen(!open);
+            }, 100)
+          }
+        >
+          Resources
+        </a>
+        <a
+          className="text-xl font-normal my-4"
+          href="/"
+          onClick={() =>
+            setTimeout(() => {
+              setOpen(!open);
+            }, 100)
+          }
+        >
+          Blog
+        </a>
+        <a
+          className="text-xl font-normal my-4"
+          href="/"
+          onClick={() =>
+            setTimeout(() => {
+              setOpen(!open);
+            }, 100)
+          }
+        >
+          Communities
+        </a>
+        <a
+          className="text-xl font-normal my-4"
+          href="/"
+          onClick={() =>
+            setTimeout(() => {
+              setOpen(!open);
+            }, 100)
+          }
+        >
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            LOGIN
+          </button>
+        </a>
+      </div>
     </div>
-  )
+  );
 }
 
-const style ={
-    HeaderNavWrapper:`
+export default function Navbar() {
+  const [open, setOpen] = useState(false);
+  return (
+    <nav className="flex sticky Navbar top-0 z-10 filter drop-shadow-2xl bg-white px-4 py-4 h-20 items-center ">
+      <MobileNav open={open} setOpen={setOpen} />
+      <div className="w-3/12 flex items-center">
+        <a className="text-4xl tracking-widest font-semibold" href="/">
+          {" "}
+          <h2>
+            <span className="text-blue-800">EDU.D</span>ev
+          </h2>
+        </a>
+      </div>
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: ${(props) => props.theme.bgDiv};
-  padding: 6px;
-  height: 50%;
-  border-radius: 10px;
-  `,
-    HeaderNavLinks:`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: ${(props) => props.active ? props.theme.bgSubDiv : props.theme.bgDiv };
-  height: 100%;
-  font-family: 'Roboto';
-  margin: 5px;
-  border-radius: 10px;
-  padding: 0 5px 0 5px;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: small;
-`
+      <div className="hidden md:flex text-9010FF text-1xl nav-item font-semibold font-serif ml-4 w-9/12 justify-end items-center ">
+        <NavLink to="/">HOME</NavLink>
+        <NavLink to ="/sellnft">SELL COURSE</NavLink>
+        <NavLink to ="/mynft">MY COURSE</NavLink>
+        <NavLink to="/dashboard">DASHBOARD</NavLink>
+        <NavLink to="/Review">COURSE REVIEW</NavLink>
+      </div>
+      <div className="w-9/12 flex justify-end items-center">
+      <Web3Button balance="show" icon="hide" label="Connect Wallet" />
+
+        <div
+          className="z-50 flex relative w-8 h-8 flex-col justify-between items-center md:hidden"
+          onClick={() => {
+            setOpen(!open);
+          }}
+        >
+          {/* hamburger button */}
+          <span
+            className={`h-1 w-full bg-black rounded-lg transform transition duration-300 ease-in-out ${
+              open ? "rotate-45 translate-y-3.5" : ""
+            }`}
+          />
+          <span
+            className={`h-1 w-full bg-black rounded-lg transition-all duration-300 ease-in-out ${
+              open ? "w-0" : "w-full"
+            }`}
+          />
+          <span
+            className={`h-1 w-full bg-black rounded-lg transform transition duration-300 ease-in-out ${
+              open ? "-rotate-45 -translate-y-3.5" : ""
+            }`}
+          />
+        </div>
+      </div>
+    </nav>
+  );
 }
-export default HeaderNav

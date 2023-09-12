@@ -1,5 +1,5 @@
 
-import Navbar from "./v1.0.0/Navbar/Navbar";
+
 import Hero from "./v1.0.0/hero/Hero";
 import About from "./v1.0.0/about/About";
 import Problem from "./v1.0.0/problemsolved/Problem";
@@ -21,7 +21,6 @@ export default function Layout({ children }) {
 
         {/* Below commented component only works if Navbar is imported in _app.js || To be done so once ever component listed below is complete */}
         {/* <Navbar handleLogout={handleLogout}/> */} 
-        <Navbar />
 
         {children}
 
