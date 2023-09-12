@@ -5,7 +5,7 @@ import Web3Modal from 'web3modal';
 import { useRouter } from 'next/router';
 
 import { marketplaceAddress } from '../config';
-import Navbar from "../Component/Course/Nav";
+
 import NFTMarketplace from '../../SmartContract/artifacts/contracts/NFTMarketplace.sol/NFTMarketplace.json';
 
 export default function MyAssets() {
@@ -63,7 +63,7 @@ export default function MyAssets() {
 
   return (
     <div className="flex justify-center">
-      <Navbar/>
+
   
       <div className="p-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
