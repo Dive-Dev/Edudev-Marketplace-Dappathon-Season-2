@@ -123,3 +123,125 @@ For LogoutBUtton
   );
   backdrop-filter: blur(20px);
 }
+
+
+
+
+
+/* 
+
+
+*/
+
+
+
+
+
+.add-conatiner {
+  padding-left: 122px;
+  background-color: white;
+  width: 500px;
+  padding: 25px;
+  margin-left: 382px;
+  /* margin:50px auto 0; */
+  border-top: 5px solid blue;
+  box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.5);
+}
+
+.add-conatiner h2 {
+  font-size: 22px;
+  line-height: 22px;
+  padding: 30px;
+  text-align: center;
+}
+
+.name2 {
+  margin-top: 5.9px;
+  /* padding: 5px; */
+  width: 100%;
+}
+
+.inpiut-name {
+  width: 90%;
+  position: relative;
+  margin: 20px auto;
+}
+
+.name {
+  width: 45%;
+  padding: 8px 0 8px 40px;
+}
+
+.inpiut-name span {
+  margin-left: 35px;
+}
+
+.text-name {
+  width: 100%;
+  padding: 8px 0 8px 40px;
+}
+
+.button {
+  font-weight: bold;
+  margin: 12px;
+  font-size: 22px;
+  color: white;
+  padding: 8px 0 8px 0px;
+  background-color: hsl(231, 91%, 51%);
+  width: 100%;
+}
+
+.loading {
+  width: 100vh;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Spinner {
+  width: 100vh;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bnt {
+  padding: 8px;
+  text-align: center;
+  width: 100%;
+  background-color: #00b712;
+  background-image:
+    linear-gradient(180deg, #00b712 0%, #5aff15 80%);
+  border: none;
+  cursor: pointer;
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+::-webkit-scrollbar {
+  width: 0.8em;
+  border-radius: 0.2rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000000;
+  /* margin-top: 3.5rem ; */
+}
+
+::-webkit-scrollbar-thumb {
+  background:linear-gradient(to top,blue 10%,rgba(227, 6, 205, 0.56)70%,transparent); 
+}
+
+
+@supports (scrollbar-color: #ccc #8986ad) {
+  * {
+    scrollbar-color: #ccc #8986ad;
+    scrollbar-width: 0.8rem;
+    border-radius: 0.2rem;
+  }
+}

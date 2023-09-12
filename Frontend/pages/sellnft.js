@@ -130,19 +130,19 @@ export default function CreateItem() {
     <div className="flex pr-42 justify-center items-center h-screen">
       <div className="ml-22 add-conatiner">
 				<h2 className="bg-cyan-600 bg-gradient-to-r from-indigo-500 rounded-3xl font-extrabold  text-white">
-					Add my Items 
+					Add my Courses 
 				</h2>
 				<div className="form-container ">
 					<form>
 						<div className="inpiut-name ">
             <input
-              placeholder="Asset Name"
+              placeholder="Course  Name"
               className="border rounded p-4 mb-4 w-full"
               onChange={(e) => updateFormInput({ ...formInput, name: e.target.value })}
             />
 							
               <textarea
-              placeholder="Asset Description"
+              placeholder="Course Description"
               className="border rounded p-4  mb-4 w-full"
               onChange={(e) => updateFormInput({ ...formInput, description: e.target.value })}
             />
@@ -150,14 +150,14 @@ export default function CreateItem() {
 						</div>
 						<div className="inpiut-name">
             <input
-              placeholder="Asset Price in Eth"
+              placeholder="Course Price in MATIC"
               className="border rounded p-4 mb-4 w-full"
               onChange={(e) => updateFormInput({ ...formInput, price: e.target.value })}
             />
 						</div>
 						<div className="ml-8">
 							<label className="block text-sm font-medium text-gray-700 name1">
-								Select Image
+								Select Course Image
 							</label>
 							<div className="mt-1 flex items-center">
 								<span className="inline-block h-12 w-12 overflow-hidden rounded-full bg-gray-100">
@@ -216,3 +216,4 @@ export default function CreateItem() {
     </div>
   );
 }
+
