@@ -6,6 +6,8 @@ import { toast } from "react-toastify";
 import { TailSpin } from "react-loader-spinner";
 
 
+import { upload } from "@spheron/browser-upload";
+
 import { create as IPFSHTTPClient } from 'ipfs-http-client';
 
 const projectId = '2EFZSrxXvWgXDpOsDrr4cQosKcl';
@@ -28,6 +30,14 @@ import { marketplaceAddress } from '../config';
 import NFTMarketplace from '../../SmartContract/artifacts/contracts/NFTMarketplace.sol/NFTMarketplace.json';
 
 export default function CreateItem() {
+// 
+// for the sdk
+
+const [uploadLink, setUploadLink] = useState("");
+const [dynamicLink, setDynamicLink] = useState("");
+const [file, setFile] = useState(null);
+
+  // 
   const [Uploading, setuploading] = useState(false);
 	const [uploaded, setuploaded] = useState(false);
   const [fileUrl, setFileUrl] = useState(null);
@@ -38,14 +48,34 @@ export default function CreateItem() {
     e.preventDefault();
     const file = e.target.files[0];
     try {
+
+    const selectedFile = e.target.files ? file : null;
+    setFile(selectedFile);
+    setUploadLink("");
+    setDynamicLink("");
+      
+
+
+
+
+    const response = await fetch("/api/upload");
+    
+    const responseJson = await response.json();
+  
+    const uploadResult = await upload([createFile(file)], {
+      token: responseJson.uploadToken,
+    });
       const added = await client.add(file, {
         progress: (prog) => console.log(`received: ${prog}`),
-      });
+      }); 
       const url = `https://sal-dapp.infura-ipfs.io/ipfs/${added.path}`;
       setFileUrl(url);
     } catch (error) {
       console.log('Error uploading file: ', error);
     }
+
+    
+
   }
 
   async function uploadToIPFS() {
@@ -69,8 +99,9 @@ export default function CreateItem() {
       toast.warn("Files upload required");
     }
 
-
-    if (!name || !description || !price || !fileUrl) return;
+  
+    // if (!name || !description || !price || !fileUrl) return;
+ 
     /* first, upload to IPFS */
     
     const data = JSON.stringify({
@@ -80,9 +111,27 @@ export default function CreateItem() {
     });
 
     try {
+
+      const response = await fetch("/api/upload");
+
+      const responseJson = await response.json();
+ 
+      const uploadResult = await upload([createFile(data)], {
+        token: responseJson.uploadToken,
+      });
+   
+      // console.log("UploadResult",uploadResult)
+
+      setUploadLink(uploadResult.protocolLink);
+      setDynamicLink(uploadResult.dynamicLinks[0]);
+
+
       const added = await client.add(data);
       const url =  `https://sal-dapp.infura-ipfs.io/ipfs/${added.path}`;
-      /* after file is uploaded to IPFS, return the URL to use it in the transaction */
+      // /* after file is uploaded to IPFS, return the URL to use it in the transaction */
+ 
+      // console.log("upres",uploadResult)
+      // console.log("dynLInk",DynamicLink)
       
       return url;
     } catch (error) {
@@ -94,7 +143,24 @@ export default function CreateItem() {
 		setuploaded(true);
 		 
 		toast.success("Files uploaded sucessfully");
+
   }
+
+
+  const createFile = (obj) => {
+    // Convert object to JSON string
+    const json = JSON.stringify(obj);
+
+    // Create Blob from JSON string with MIME type of JSON
+    const blob = new Blob([json], { type: "application/json" });
+
+    // Create File from Blob with a filename
+    const file = new File([blob], "metadata.json", {
+      type: "application/json",
+    });
+
+    return file;
+  };
   
   async function listNFTForSale(e) {
     e.preventDefault();
@@ -202,14 +268,7 @@ export default function CreateItem() {
 									Files uploaded sucessfully
 								</button>
 							)}
-						{/* <div className="inpiut-name">
-							<button
-								className="rounded-xl bg-gradient-to-r from-indigo-500 button"
-                onClick={listNFTForSale}
-							>
-								ADD EMPLOYEE
-							</button>
-						</div> */}
+					
 					</form>
 				</div>
 			</div>

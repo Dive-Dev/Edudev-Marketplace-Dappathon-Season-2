@@ -1,54 +1,65 @@
-.cartoonImg{
-  background: url('/assets/back.png') no-repeat;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top:0;
+/* Upload.module.css */
+
+.container {
   width: 100%;
-  height: 110%;
-  background-size: cover;
-  background-position: 55% -40px;
-  z-index: 1;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-.cloud_one{
-  background: url('/assets/cloud_1.png') no-repeat;
-  position: absolute;
-  top: 10%; left: 10%;
-  width: 180px;
-  height: 100px;
-  background-size: contain;
-  z-index: 1;
-  transform: translateX(290%);
-   animation: cloud_one 10s ease-in 5.9s infinite; 
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
 }
 
-.cloud_two{
-  background: url('/assets/cloud_2.png') no-repeat;
-  position: absolute;
-  top: 49%;left: 50%;
-  width: 200px;
-  height: 100px;
-  background-size: contain;
-  z-index: 2;
-  transform: translateX(290%);
-   animation: cloud_two 8s ease-in .9s infinite; 
+.uploadArea {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
-/* css keyframes */
-@keyframes cloud_one{
-  0%{
-      transform: translateX(290%);
-  }100%{
-      transform: translateX(-250%);
-  }
+.actionButton {
+  /* width: 100%; */
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #FF4E17;
+  color: #fff;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
 }
 
-@keyframes cloud_two{
-  0%{
-      transform: translateX(160%);
-  }100%{
-      transform: translateX(-250%);
-  }
+.actionButton:hover {
+  background-color: #0056b3;
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.fileName {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.link {
+  display: block;
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
