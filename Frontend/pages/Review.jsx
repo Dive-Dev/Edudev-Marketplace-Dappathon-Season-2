@@ -9,7 +9,7 @@ import { useState, useEffect } from "react";
 import { ethers } from "ethers";
 import Buy from  "../Component/v1.0.0/Review/Buys"
 import Memos from "../Component/v1.0.0/Review/Memos";
-import chai from "../public/About/Explore2.png"
+// import chai from "../public/About/Explore2.png"
 
 function Review() {
   const [state, setState] = useState({
@@ -58,8 +58,8 @@ function Review() {
   }, []);
   // console.log(state);
   return (
-    <div style={{ backgroundColor: "#EFEFEF", height: "100%" }}>
-      <img src={chai} className="img-fluid" alt=".." height={556} width={742} />
+    <div className ="cnt" style={{ backgroundColor: "", height: "100%" }}>
+      {/* <img src={chai} className="img-fluid" alt=".." height={556} width={742} /> */}
       <div className="container">
         <Buy state={state} />
         <Memos state={state} />

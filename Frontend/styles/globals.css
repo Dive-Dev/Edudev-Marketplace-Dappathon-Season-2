@@ -280,3 +280,58 @@ text-transform: uppercase;
 font-weight: bold;
 font-size: small;
   }
+
+
+  /* Review  */
+
+  .cnt{
+    background: linear-gradient(135deg, #690A4A, #59194A, #49274A, #39364B, #28454B, #18534B, #08624B);
+  }
+  .mn{
+    color: #ccc;
+  }
+
+  .subcnt{
+    padding: 2px;
+    margin-left: 171px;
+  }
+
+  .mncnt{
+    padding-left: 192px;
+    color: #5aff15;
+    font-size: 42px;
+  }
+
+
+  /* Styles for screens larger than 768px (e.g., tablets) */
+@media (min-width: 768px) {
+  .subcnt {
+    /* Add styles for larger screens here */
+    margin: 0 auto; /* Center the content horizontally */
+    width: 80%; /* Adjust the width to your preference */
+  }
+}
+
+/* Styles for screens larger than 1024px (e.g., desktops) */
+@media (min-width: 1024px) {
+  .subcnt {
+    /* Add styles for extra-large screens here */
+    width: 60%; /* Adjust the width to your preference */
+  }
+}
+
+
+.tb{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.tr{
+  flex: 1 1 auto;
+}
+
+.mrkt{
+  background: linear-gradient(135deg, #690A4A, #59194A, #49274A, #39364B, #28454B, #18534B, #08624B);
+
+}

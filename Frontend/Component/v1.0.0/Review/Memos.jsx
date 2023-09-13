@@ -13,22 +13,25 @@ const Memos = ({ state }) => {
 
   return (
     <>
-      <p style={{ textAlign: "center", marginTop: "20px" }}>Messages</p>
+      <p className="mncnt" style={{ textAlign: "center", marginTop: "20px" }}>REVIEWS</p>
       {memos.map((memo) => {
         return (
+          <div className="subcnt">
           <div
             className="container-fluid"
             style={{ width: "100%" }}
             key={Math.random()}
           >
             <table
+            className="tb"
               style={{
                 marginBottom: "10px",
               }}
+              responsive={true}
             >
               <tbody>
-                <tr>
-                  <td
+                <tr className="tr">
+                  <td 
                     style={{
                       backgroundColor: "#96D4D4",
                       border: "1px solid white",
@@ -75,6 +78,7 @@ const Memos = ({ state }) => {
                 </tr>
               </tbody>
             </table>
+          </div>
           </div>
         );
       })}
