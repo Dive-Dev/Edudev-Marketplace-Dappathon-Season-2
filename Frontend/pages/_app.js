@@ -180,16 +180,15 @@
 
 
 import Layout from "../Component/Layout";
-import Navbar from "../Component/Navbar";
+
 import "../styles/globals.css";
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+
 import { useRouter } from 'next/router' 
 
 import { useEffect, useState } from 'react'
 import { ColorRing } from 'react-loader-spinner';
 
-import { ThemeProvider } from "styled-components";
+
 
 
 if (!"2437b6ee508a24481ec9cfa2ff6ddadf") {

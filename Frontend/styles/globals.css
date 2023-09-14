@@ -335,3 +335,29 @@ font-size: small;
   background: linear-gradient(135deg, #690A4A, #59194A, #49274A, #39364B, #28454B, #18534B, #08624B);
 
 }
+
+
+.ImgDiv{
+  width: 112px;
+  height: 112px;
+  margin: 0 auto;
+}
+
+.MyDiv{
+  width: 417px;
+  height: 477px;
+
+  @media (max-width: 1450px) {
+    margin: 0 auto;
+  }
+}
+
+
+.MyDiv1{
+  width: 724px;
+  
+  @media (max-width: 768px) {
+    width: 100%;
+    font-size: 3rem;
+  }
+}

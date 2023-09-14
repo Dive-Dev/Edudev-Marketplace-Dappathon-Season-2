@@ -1,26 +1,11 @@
 import React from "react";
-import styled from "styled-components";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useMediaQuery } from "react-responsive";
 import Image from "next/image";
-import AboutIcon from "../../images/about.png";
 
-const MyDiv = styled.div`
-  width: 417px;
-  height: 477px;
 
-  @media (max-width: 1450px) {
-    margin: 0 auto;
-  }
-`;
-
-const ImgDiv = styled.div`
-  width: 112px;
-  height: 112px;
-  margin: 0 auto;
-`;
 
 function HappyClient() {
   // Sample data for carousel items
@@ -89,9 +74,9 @@ function HappyClient() {
         <Slider {...carouselSettings}>
           {carouselItems.map((item) => (
             <div key={item.id} className="px-2">
-              <MyDiv className="rounded-lg bg-gradient-to-b p-[6px] from-[#FB65FE] from-100% to-[#9010FF] to-100%">
+              <div className="MyDiv rounded-lg bg-gradient-to-b p-[6px] from-[#FB65FE] from-100% to-[#9010FF] to-100%">
                 <div className="flex flex-col justify-between h-full bg-white rounded-md p-4">
-                  <ImgDiv className="rounded-full bg-gradient-to-b p-[4px] from-[#FB65FE] from-100% to-[#9010FF] to-100%">
+                  <div className=" ImgDiv rounded-full bg-gradient-to-b p-[4px] from-[#FB65FE] from-100% to-[#9010FF] to-100%">
                     <div className="flex flex-col justify-between h-full bg-white rounded-full p-2">
                       <Image
                         className="flex flex-col justify-between h-full bg-white rounded-full"
@@ -101,7 +86,7 @@ function HappyClient() {
                         alt=""
                       ></Image>
                     </div>
-                  </ImgDiv>
+                  </div>
                   <div className="font-Inter text-[#000000] text-2xl text-center font-semibold">
                     {item.name}
                   </div>
@@ -114,7 +99,7 @@ function HappyClient() {
                     </button>
                   </div>
                 </div>
-              </MyDiv>
+              </div>
             </div>
           ))}
         </Slider>
