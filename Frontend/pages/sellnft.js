@@ -69,7 +69,8 @@ const [file, setFile] = useState(null);
       const added = await client.add(file, {
         progress: (prog) => console.log(`received: ${prog}`),
       }); 
-      const url = `https://sal-dapp.infura-ipfs.io/ipfs/${added.path}`;
+      const   url = `https://sal-dapp.infura-ipfs.io/ipfs/${added.path}`;
+      alert("con",fileUrl);
       setFileUrl(url);
     } catch (error) {
       console.log('Error uploading file: ', error);
@@ -100,8 +101,10 @@ const [file, setFile] = useState(null);
       toast.warn("Files upload required");
     }
 
+    alert(fileUrl);
+
   
-    // if (!name || !description || !price || !fileUrl) return;
+    if (!name || !description || !price || !fileUrl) return;
  
     /* first, upload to IPFS */
     
