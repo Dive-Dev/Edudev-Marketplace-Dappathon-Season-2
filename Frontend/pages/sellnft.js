@@ -27,8 +27,7 @@ const client = IPFSHTTPClient({
 
 
 import { marketplaceAddress } from '../config';
-
-import NFTMarketplace from '../artifacts/contracts/NFTMarketplace.sol/NFTMarketplace.json'
+import NFTMarketplace from '../artifacts/contracts/NFTMarketplace.sol/NFTMarketplace.json';
 
 export default function CreateItem() {
 // 
@@ -69,8 +68,7 @@ const [file, setFile] = useState(null);
       const added = await client.add(file, {
         progress: (prog) => console.log(`received: ${prog}`),
       }); 
-      const   url = `https://sal-dapp.infura-ipfs.io/ipfs/${added.path}`;
-      alert("con",fileUrl);
+      const url = `https://sal-dapp.infura-ipfs.io/ipfs/${added.path}`;
       setFileUrl(url);
     } catch (error) {
       console.log('Error uploading file: ', error);
@@ -101,10 +99,8 @@ const [file, setFile] = useState(null);
       toast.warn("Files upload required");
     }
 
-    alert(fileUrl);
-
   
-    if (!name || !description || !price || !fileUrl) return;
+    // if (!name || !description || !price || !fileUrl) return;
  
     /* first, upload to IPFS */
     
@@ -197,9 +193,72 @@ const [file, setFile] = useState(null);
   }
 
   return (
-    <div className="flex pr-42 justify-center items-center h-screen">
+    <>
+      <div className="min-h-screen py-10 bg-gradient-to-r from-green-700 to-green-300">
+        <div className="container mx-auto">
+          <div className="flex w-8/12 bg-white flex-col md:flex-row rounded-xl mx-auto shadow-lg overflow-hidden">
+          <div className="md:w-1/2 bg-black flex flex-col justify-center items-center">
+            <h2 className='text-3xl mb-4 text-white'>Add your details</h2>
+            <div>
+              <p className='text-justify px-4 text-white'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+          </div>
+          <div className="md:w-1/2 py-10 px-12">
+            <p className="mb-3">Sell your course and get paid.</p>
+            <form>
+              <div className="mt-5">
+                <input placeholder="Course Name" className="border-2 border-black rounded p-4 mb-2 w-full" onChange={(e) => updateFormInput({ ...formInput, name: e.target.value })}/>
+              </div>
+
+              <div className="mt-5">
+                <textarea placeholder="Course Description" className="border-2 border-black rounded p-4 mb-2 w-full" onChange={(e) => updateFormInput({ ...formInput, description: e.target.value })}/>  
+              </div>
+              
+              <div className="mt-5">
+                <input placeholder="Course Price in MATIC" className="border-2 border-black rounded p-4 mb-2 w-full" onChange={(e) => updateFormInput({ ...formInput, price: e.target.value })}/>  
+              </div>
+              
+              <div className="mt-5">
+							  <label className="block text-sm font-medium text-gray-700 name1">
+								  Select Course Image
+							  </label>
+							  <div className="mt-1 flex items-center border-2 border-black">
+								  <span className="inline-block h-12 w-12 overflow-hidden rounded-full bg-gray-100">
+									  
+                    <svg className="h-full w-full text-gray-300" fill="currentColor" viewBox="0 0 24 24">
+                    
+										  <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
+									  </svg>
+								  </span>
+                  
+                  <input type="file" name="Asset" className="ml-3 blockw-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:green-700 focus:outline-non "accept="image/*" onChange={onChange}/>
+                        
+								  {" "}
+							  </div>
+						  </div>
+						
+              {Uploading == true ? (
+								<button className="button bg-green-600">
+									<TailSpin color="#fff" height={20} />
+								</button>
+							) : uploaded == false ? (
+								<button className="rounded-xl bg-green-600 button mt-3" onClick={listNFTForSale}>
+								  SELL MY ITEM 
+							  </button>
+							) : (
+								<button style={{ cursor: "no-drop" }} className="button">
+									Files uploaded sucessfully
+								</button>
+							)}
+            </form>
+          </div>
+          </div>
+        </div>
+      </div>
+    
+    {/* <div className="flex pr-42 justify-center items-center h-screen">
       <div className="ml-22 add-conatiner">
-				<h2 className="bg-cyan-600 bg-gradient-to-r from-indigo-500 rounded-3xl font-extrabold  text-white">
+				<h2 className="bg-cyan-600 bg-gradient-to-r from-indigo-500 rounded-3xl font-extrabold text-white">
 					Add my Courses 
 				</h2>
 				<div className="form-container ">
@@ -276,7 +335,7 @@ const [file, setFile] = useState(null);
 					</form>
 				</div>
 			</div>
-    </div>
+    </div> */}
+    </>
   );
 }
-

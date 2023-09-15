@@ -9,7 +9,8 @@ import { useState, useEffect } from "react";
 import { ethers } from "ethers";
 import Buy from  "../Component/v1.0.0/Review/Buys"
 import Memos from "../Component/v1.0.0/Review/Memos";
-// import chai from "../public/About/Explore2.png"
+
+
 
 function Review() {
   const [state, setState] = useState({
