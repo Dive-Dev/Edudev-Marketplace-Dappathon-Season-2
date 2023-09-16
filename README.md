@@ -1,9 +1,6 @@
 # Edudev-Learn-and-earn-platform-Dappathon-Season-2
 
-
-Vercel Deployment Link: https://edudev-learn-and-earn-platform-dappathon-season-2.vercel.app/
-
-
+![Group 41](https://github.com/DiveDev21/Edudev-Learn-and-earn-platform-Dappathon-Season-2/assets/85225156/e70d5002-6b33-433e-ab6e-400766722aab)
 
 
 <h1 align="center"> 
