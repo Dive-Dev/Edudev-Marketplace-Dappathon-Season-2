@@ -10,7 +10,7 @@ Vercel Deployment Link: https://edudev-learn-and-earn-platform-dappathon-season-
   <img src="https://user-images.githubusercontent.com/85225156/215914335-d9a35b88-99ae-4769-8b1d-3b7e8ca3f993.png" width="35" height="30">
   <span style="color: yellow">Edu.dev MarketPlace</span>
 </h1>
-<p> <b>This Dapp allows  .....</b> </p>
+<p> <b>In today's digital age, education is changing rapidly. Blockchain technology is playing a big role in this transformation by making education more innovative and transparent. Our project, a Decentralized Application (Dapp), is leading the way in this educational revolution. It offers a new way for course creators to share their knowledge, for learners to find and use courses, and for reviewers to get rewards for their feedback.</b> </p>
 <br>
 
   
