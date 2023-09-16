@@ -17,7 +17,7 @@ import Market from "./Market"
 export default function Home(){
  
   return (
-    <>  
+    <div className='overflow-x-hidden'>  
         <Navbar/>
         <Hero/>
         <About/> 
@@ -26,6 +26,6 @@ export default function Home(){
        < Card/>
         <HappyClient/> 
 
-    </>
+    </div>
   )
 }

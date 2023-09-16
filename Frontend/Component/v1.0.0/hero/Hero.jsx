@@ -39,7 +39,7 @@ import heroIcon from "../../../public/About/In2.png";
 
 function Hero() {
   return (
-    <div className="flex flex-col-reverse md:flex-row justify-between items-center md:px-5 md:mx-5">
+    <div className="flex flex-col-reverse md:flex-row justify-between items-center md:px-5 pt-20 md:pt-0 md:mx-5">
       <div className="md:pt-20 md:pl-20 flex flex-col md:flex-row justify-between items-center">
         <div>
           <div className="font-Poppins md:pt-8 md:pb-5 text-[#9010FF] text-3xl font-semibold text-center md:text-left m-8 md:m-0">A decentralized application</div>

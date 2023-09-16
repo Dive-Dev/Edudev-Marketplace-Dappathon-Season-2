@@ -122,3 +122,11 @@ export default function Navbar() {
     </>
   );
 }
+
+{/* <div className="hidden bg-green-500 md:flex text-9010FF text-1xl nav-item font-bold font-serif justify-center items-center text-black h-8">
+        <NavLink to="/">HOME</NavLink>
+        <NavLink to ="/sellnft">SELL COURSE</NavLink>
+        <NavLink to ="/mynft">MY COURSE</NavLink>
+        <NavLink to="/dashboard">DASHBOARD</NavLink>
+        <NavLink to="/Review">COURSE REVIEW</NavLink>
+      </div> */}

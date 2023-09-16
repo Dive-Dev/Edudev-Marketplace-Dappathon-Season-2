@@ -9,7 +9,7 @@ const Card = () => {
 
   return (
     <>
-      <div id="card" className = "w-full p-5 overflow-x-hidden">
+      <div name ="Market" id="card" className = "w-full p-5 overflow-x-hidden">
         <div className = "max-w-screen-lg mx-auto flex flex-col items-center justify-center border-gray-500">
           <div className = "pb-8">
             <p className = "text-4xl font-bold text-center mb-5 text-white">Create, Learn and Earn</p>

@@ -4,7 +4,7 @@ import Head from 'next/head';
 
 const AboutUs = () => {
   return (
-    <div id ="About">
+    <div name ="about" id ="About">
       <Head>
         <title>Edu.Dev | About Us</title>
         <meta name="description" content="ClueLess About Us Page" />
