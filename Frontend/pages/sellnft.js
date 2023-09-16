@@ -165,12 +165,6 @@ const [file, setFile] = useState(null);
   async function listNFTForSale(e) {
     e.preventDefault();
 
-
-    
-
-
-
-
     const url = await uploadToIPFS();
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     await provider.send('eth_requestAccounts', []);

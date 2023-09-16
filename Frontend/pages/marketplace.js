@@ -62,23 +62,23 @@ export default function Home() {
   }
   if (loadingState === 'loaded' && !nfts.length) return (<h1 className="px-20 py-10 text-3xl">No Courses in marketplace</h1>)
   return (
-    <div className="flex mrkt justify-center">
+    <div className="flex mrkt  justify-center">
       {/* <Navbar/> */}
-      <div className="px-4" style={{ maxWidth: '1600px' }}>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
+      <div className="px-10" style={{ maxWidth: '1600px' }}>
+        <div className="grid flex  grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4 unmrk">
           {
             nfts.map((nft, i) => (
-              <div key={i} className="border shadow rounded-xl overflow-hidden">
-                <img src={nft.image} />
+              <div key={i} className="border rounded-t-md  umrkt shadow rounded-xl overflow-hidden">
+                <img   height="250px"  className = " w-full rounded-t-md duration-200 hover:scale-110 hover:overflow-hidden" src={nft.image} />
                 <div className="p-4">
-                  <p style={{ height: '64px' }} className="text-2xl font-semibold">{nft.name}</p>
+                  <p style={{ height: '100%' }} className="text-2xl font-semibold">{nft.name}</p>
                   <div style={{ height: '70px', overflow: 'hidden' }}>
                     <p className="text-gray-400">{nft.description}</p>
                   </div>
                 </div>
-                <div className="p-4 bg-black">
+                <div className="p-4  umrk bg-black">
                   <p className="text-2xl font-bold text-white">{nft.price} MATIC</p>
-                  <button className="mt-4 w-full bg-pink-500 text-white font-bold py-2 px-12 rounded" onClick={() => buyNft(nft)}>Buy</button>
+                  <button className=" hover:rotate-2 delay-100 transition ease-in-out   text-center border hover:bg-gray-100 hover:shadow-md border-gray-500 rounded-md mt-4 w-full bg-green-500 text-cyan font-bold py-2 px-12 rounded" onClick={() => buyNft(nft)}>Buy</button>
                 </div>
               </div>
             ))

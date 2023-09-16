@@ -7,21 +7,12 @@ import adv from "./images/adv.jpg"
 
 const Card = () => {
 
-//   const navigation = [
-//   { name: 'Beginner', href: '/beginner', current: false },
- 
-// ];
-
-// function classNames(string[]) {
-//   return classes.filter(Boolean).join(' ');
-// }
-
   return (
     <>
-      <div  className = "w-full py-5 overflow-x-hidden">
+      <div id="card" className = "w-full p-5 overflow-x-hidden">
         <div className = "max-w-screen-lg mx-auto flex flex-col items-center justify-center border-gray-500">
           <div className = "pb-8">
-            <p className = "text-4xl font-bold text-center mb-5 text-white">Click and Learn</p>
+            <p className = "text-4xl font-bold text-center mb-5 text-white">Create, Learn and Earn</p>
             <p className = "text-xl font-bold text-center mb-5 text-white">Choose from the variety of Courses with new additions published every month.</p>
           </div>
 
@@ -35,12 +26,6 @@ const Card = () => {
                 <div>
                   <p className = "text-sm text-justify font-bold mx-auto p-3 text-white">For those with little to no prior knowledge, Basic Courses acts as an introduction in any particular domain. These classes address fundamental skills with the goal of giving students the background knowledge required to confidently use technology. </p>
                 </div>
-                    
-                <div className = "flex justify-between px-3 items-center">
-                  <button className = "px-4 py-2 mb-3 text-xl rounded-md bg-green-500 text-white font-bold">
-                    <Link legacyBehavior href={"/Market"}  className = "text-white font-extrabold">Basic Courses</Link>
-                  </button>
-                </div>
               </div>
             </div>
 
@@ -52,12 +37,6 @@ const Card = () => {
               <div className = "bg-gradient-to-b from-black to-gray-800 text-center">
                 <div>
                   <p className = "text-sm text-justify font-bold mx-auto p-3 text-white">For those with basic knowledge of the domain, Intermediate Courses are good to go with. These classes address concepts with the goal of giving students further knowledge of the skill required to implement the technology in an efficient manner.</p>
-                </div>
-                    
-                <div className = "flex">
-                  <button className = "px-4 py-2 mb-3 ml-3 text-xl rounded-md bg-green-500 text-white font-bold">
-                    <Link legacyBehavior href={"/Courses/Intermediate/IntermediateCourses"} target = "_blank" className = "text-white font-extrabold">Intermediate Courses</Link>
-                  </button>
                 </div>
               </div>
             </div>
@@ -71,15 +50,14 @@ const Card = () => {
                 <div>
                   <p className = "text-sm text-justify font-bold mx-auto p-3 text-white">For those who want to further enhance their knowledge and competence in a particular field should enrol in Advanced Courses. These programmes offer specialised skills for numerous industries and cater to a variety of interests and career goals. </p>
                 </div>
-                    
-                <div className = "flex">
-                  <button className = "px-4 py-2 mb-3 ml-3 text-xl rounded-md bg-green-500 text-white font-bold">
-                    <Link legacyBehavior href={"/Courses/Advance/AdvanceCourses"} target = "_blank" className = "text-white font-extrabold">Advance Courses</Link>
-                  </button>
-                </div>
               </div>
             </div>
+          </div>
 
+          <div className='flex justify-center items-center mt-10'>
+            <button className = "flex justify-center px-4 py-2 mx-auto text-xl hover:rotate-2 delay-100 transition ease-in-out   text-center border hover:bg-gray-100 hover:shadow-md border-gray-500  rounded-md bg-green-500 text-cyan font-bold">
+              <Link legacyBehavior href={"/Market"} className = "text-white font-extrabold">Click - To get into World of Education Dapp</Link>
+            </button>
           </div>
         </div>
       </div>

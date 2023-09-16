@@ -1,12 +1,6 @@
 import { useState } from "react";
-import Image from "next/image"
-import { Link } from 'react-scroll';
+
 import { Web3Button } from '@web3modal/react';
-import LogoutButton from '../../LogoutButton';
-import ToggleAppearance from "../../ToggleAppearance";
-import Logo from '../../../public/assets/logo.svg'
-
-
 
 function NavLink({ to, children }) {
   return (
@@ -42,6 +36,17 @@ function MobileNav({ open, setOpen }) {
           About
         </a>
         <a
+          className="text-xl font-medium my-4"
+          href="/"
+          onClick={() =>
+            setTimeout(() => {
+              setOpen(!open);
+            }, 100)
+          }
+        >
+          Market Place
+        </a>
+        {/* <a
           className="text-xl font-normal my-4"
           href="/"
           onClick={() =>
@@ -73,7 +78,7 @@ function MobileNav({ open, setOpen }) {
           }
         >
           Communities
-        </a>
+        </a> */}
         <a
           className="text-xl font-normal my-4"
           href="/"
@@ -95,28 +100,29 @@ function MobileNav({ open, setOpen }) {
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="flex sticky Navbar top-0 z-10 filter drop-shadow-2xl bg-white px-4 py-4 h-20 items-center ">
+    <nav className="flex justify-between sticky Navbar top-0 z-10 filter drop-shadow-2xl bg-white px-4 py-4 h-20 items-center">
       <MobileNav open={open} setOpen={setOpen} />
-      <div className="w-3/12 flex items-center">
+      <div className="flex items-center">
         <a className="text-4xl tracking-widest font-semibold" href="/">
           {" "}
           <h2>
-            <span className="text-blue-800">EDU.D</span>ev
+            <span className="text-blue-800">EDU.d</span><span className="text-white">App</span>
           </h2>
         </a>
       </div>
 
-      <div className="hidden md:flex text-9010FF text-1xl nav-item font-semibold font-serif ml-4 w-9/12 justify-end items-center ">
-        <NavLink to="/about-us">ABOUT US</NavLink>
-        <NavLink to="/resources">RESOURCES</NavLink>
-        <NavLink to="/blog">BLOG</NavLink>
-        <NavLink to="/communities">COMMUNITIES</NavLink>
+      <div className="hidden md:flex text-9010FF text-1xl nav-item font-semibold font-serif justify-end items-center ">
+        <NavLink to="/">HOME</NavLink>
+        <NavLink to="#About">ABOUT US</NavLink>
+        <NavLink to="#card">MARKET PLACE</NavLink>
+       
       </div>
-      <div className="w-9/12 flex justify-end items-center">
+
+      <div className="flex justify-end items-center">
       <Web3Button balance="show" icon="hide" label="Connect Wallet" />
 
         <div
-          className="z-50 flex relative w-8 h-8 flex-col justify-between items-center md:hidden"
+          className="z-50 flex relative w-8 ml-5 h-6 flex-col justify-between items-center md:hidden"
           onClick={() => {
             setOpen(!open);
           }}

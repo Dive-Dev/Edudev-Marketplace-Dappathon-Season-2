@@ -67,7 +67,7 @@ function HappyClient() {
 
   return (
     <>
-      <div className="font-lily-script-one text-center p-5 lg:pt-5 pt-20 text-[#000000] text-4xl">
+      <div className="font-lily-script-one text-center p-5 text-white lg:pt-5 pt-20 text-[#000000] text-4xl">
         Happy Client Works
       </div>
       <div className="mt-10 pl-20 pr-20">

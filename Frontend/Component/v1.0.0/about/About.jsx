@@ -4,22 +4,23 @@ import Head from 'next/head';
 
 const AboutUs = () => {
   return (
-    <>
+    <div id ="About">
       <Head>
         <title>Edu.Dev | About Us</title>
         <meta name="description" content="ClueLess About Us Page" />
       </Head>
-      <div className=" green-gradient absolute left-[20%] top-[10%] "></div>
+      <div  className=" green-gradient absolute left-[20%] top-[10%] "></div>
       <div className="flex flex-col md:flex-row justify-between p-5 m-10 relative sm:p-10">
         <div className="hidden lg:block">
           <h1 className="text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mt-24">
-            About <br /> Community.
+            About <br /> Edu.dApp
           </h1>
           <p className="text-white lg:w-3/5 ml-12 xl:w-1/2 text-lg mt-8 tracking-wider">
-            Clueless is a student community which focuses on building developer
-            tools with the power of open-source. We believe in the vision “Learn
-            and Grow” and encourage & guide enthusiasts to dive deep into the
-            world of open-source.
+          Our project, a Decentralized Application (Dapp), is leading the way in this educational revolution. I
+          t offers a new way for course creators to share their knowledge, for learners to find and use courses,
+           and for reviewers to get rewards for their feedback.
+
+
           </p>
           <div>
             <img
@@ -64,9 +65,10 @@ const AboutUs = () => {
                   Our Vision
                 </h1>
                 <p className="text-[#D4D4D4] text-xl tracking-wider">
-                  We believe in the motto 'Learn & Grow'. Our sole focus is to
-                  build some developer tools which will be built by developers
-                  and serve for developers.
+                  Our vision is to create a global ecosystem that democratizes education, making it accessible, affordable, 
+                  and reliable for everyone. We believe that every individual has the potential to be both a learner and a teacher, 
+                  and our Dapp is designed to empower them to do so. By harnessing the power of blockchain technology, we aim to remove 
+                  intermediaries, reduce costs, and enhance trust in the educational marketplace.
                 </p>
               </div>
             </div>
@@ -132,7 +134,7 @@ const AboutUs = () => {
       {/* <div className="flex sm:justify-end px-32 justify-start sm:h-40 h-28 ml-8 sm:ml-0 sm:mr-40">
         <img src="/line1.png" alt="line3 " />
       </div> */}
-    </>
+    </div>
   );
 };
 

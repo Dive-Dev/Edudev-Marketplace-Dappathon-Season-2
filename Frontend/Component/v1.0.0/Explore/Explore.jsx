@@ -19,9 +19,9 @@ function Explore() {
             <span className="font-semibold  text-5xl text-[#7EE787]">
               Learn about some biggest
             </span>{' '}
-            <span className="text-white text-5xl ">Open-source Programs</span>
+            <span className="text-white text-5xl ">Web3 -startup Programs</span>
           </h1>
-          <Link href="/coming-soon" passHref>
+          <Link legacyBehavior href={"/Market"}>
             <button className=" bg-[#9010FF] text-[#FFFFFF] text-5xl mx-2 py-4 px-6 btn-green">Explore</button>
           </Link>
         </div>

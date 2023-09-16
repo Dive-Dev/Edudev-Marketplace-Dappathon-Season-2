@@ -331,7 +331,18 @@ font-size: small;
   flex: 1 1 auto;
 }
 
+
+/* for images and cards */
+
+.unmrk{
+  width: 1100px;
+  height:auto;
+
+}
+
 .mrkt{
+
+  /* height: 20px; */
   background: linear-gradient(135deg, #690A4A, #59194A, #49274A, #39364B, #28454B, #18534B, #08624B);
 
 }
