@@ -125,8 +125,11 @@ The Dapp addresses several critical issues in the realm of education and online 
 - Verifying our smart contract on the Polygon testnet was another particular challenge. We had to use BUNZZ decipher for documentation, so we spent several hours figuring it out. We eventually found a solution. We bundled our smart contract on Remix, which allowed us to deploy it on the Polygon testnet without providing ABI info and library information.
 
 **Frontend**
-- 
-- 
+- The biggest challenge that I faced was to make the website compatiable with the browser and the device. This is the first thing which is to be kept in mind as a front-end developer to ensure that the website looks good and performs well on all existing browsers and devices with different screen sizes.
+  
+- Next thing was to deal with the performance of the website. Since, if the website gives good performance and does the task in a speedy manner then it can reach to many problems and solve their issues. So, optimising the code is the next big task.
+  
+- Debugging is another big challenge. Finding and fixing errors in code can be a tedious task at times. Developers can use browser dev tools, error console, and testing to debug their code effectively.
 
 <br>
 
