@@ -167,8 +167,9 @@ There are two types of deployment available in Spheron.
 
         For detailed explain you can follow this blog written by me [static deployment](https://omega1.hashnode.dev/deploying-a-web3-application-on-the-spheron#clio55gc706uah7nv5ag13ctt?t=1686289369279)
 
-  - Dynamic deployment using Spheron compute 
-      We are using API endpoint for storage  browser SDK so that's why we have to move into the dynamic deployment.
+  - Dynamic deployment using Spheron compute
+    
+     - We are using API endpoint for storage  browser SDK so that's why we have to move into the dynamic deployment.
           - The Spheron Browser Upload SDK is a JavaScript library that enables seamless uploading of files from the browser to IPFS, Filecoin, or Arweave. This simplifies the process of building decentralized applications (dApps) that             can securely and reliably store and share data. To use the SDK, developers first generate an upload token by creating a server endpoint that utilizes the Spheron Storage SDK. Once the upload token has been created,                      developers can conveniently upload files from their web application. The SDK offers various features to simplify the file-uploading process, including progress tracking, automatic error handling, and the ability to cancel               uploads at any time.
 
     For dynamic deployment please follow this blog [Spheron dynamic deploymen](https://blog.spheron.network/deploy-your-nextjs-application-on-spheron-network-with-and-without-apis)
