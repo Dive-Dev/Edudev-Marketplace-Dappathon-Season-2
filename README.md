@@ -323,6 +323,16 @@ The Education Marketplace Contract consists of several key components:
 
 ## Future improvement
 
+Our Dapp has already introduced an exciting and innovative way for users to create, purchase, and review courses, complete with NFT rewards. As we continue to evolve and enhance our platform, we have some exciting plans for the future:
+
+1. **Dynamic Course Review Section:** We recognize the importance of fostering a dynamic and engaging learning community. In the near future, we aim to implement a dynamic course review section. While it's still in the planning phase due to time constraints, this feature will enable users to share their thoughts, insights, and questions about a course in real-time. This will further enhance the collaborative and interactive learning experience within our platform.
+
+2. **Course Overview:** To provide users with a comprehensive understanding of what a course offers, we will introduce a "Course Overview" feature. Alongside the "Buy" button, there will be an additional "Course Overview" button. By clicking on it, potential buyers can access detailed information about the course, including its objectives, curriculum, and instructor credentials. This will help learners make more informed decisions about their course purchases.
+
+3. **Full Content Blog Integration:** To enrich the educational experience, we are exploring the possibility of integrating a full-content blog section into our Dapp. This blog will serve as a valuable resource, offering additional insights, articles, and supplementary materials related to the courses available on our platform. This content will be seamlessly integrated into our smart contracts, providing users with a wealth of educational resources in one place.
+
+These future improvements align with our commitment to creating an educational ecosystem that is not only decentralized and secure but also dynamic and user-centric. We are dedicated to continuously enhancing the learning experience for our users and expanding the opportunities for both creators and learners within our platform. Stay tuned for these exciting updates as we strive to make education more accessible and engaging for all.
+
 
 ## 🎥 Video Demo
 
