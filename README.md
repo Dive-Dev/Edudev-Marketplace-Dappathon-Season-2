@@ -146,11 +146,15 @@ Please refer to the official page for a comprehensive explanation of the deploym
 
  The Spheron Browser Upload SDK is a JavaScript library that enables seamless uploading of files from the browser to IPFS, Filecoin, or Arweave. This simplifies the process of building decentralized applications (dApps) that             can securely and reliably store and share data. To use the SDK, developers first generate an upload token by creating a server endpoint that utilizes the Spheron Storage SDK. Once the upload token has been created,                      developers can conveniently upload files from their web application. The SDK offers various features to simplify the file-uploading process, including progress tracking, automatic error handling, and the ability to cancel               uploads at any time.
 
-The below image is the metadata store where all files are uploaded 
+**The below image is the Dapp fontend view where we are using SDK**
+
+![Screenshot from 2023-09-17 18-50-05](https://github.com/DiveDev21/Edudev-Marketplace-Dappathon-Season-2/assets/85225156/930f4a6c-1858-4177-9b01-ab540f42585e)
+
+**The below image is the metadata store where all files are uploaded **
 
 ![Screenshot from 2023-09-17 17-18-35](https://github.com/DiveDev21/Edudev-Marketplace-Dappathon-Season-2/assets/85225156/4812faf6-bf3c-4eb1-9b4e-ecfae7d38fdd)
 
-Here's the Full metadata stored in the browser SDK
+**Here's the Full metadata stored in the browser SDK**
 
 ![Screenshot from 2023-09-17 17-34-41](https://github.com/DiveDev21/Edudev-Marketplace-Dappathon-Season-2/assets/85225156/9366c843-63b4-4fc3-9203-6f6761451f5a)
 
