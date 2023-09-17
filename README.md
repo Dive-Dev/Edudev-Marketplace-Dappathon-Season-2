@@ -222,11 +222,11 @@ The Router chain is a layer 1 blockchain that leverages tendermint’s Byzantine
 Here's is the full information about how can you build your first dapp using router https://devnet-docs.routerprotocol.com/develop/message-transfer-via-crosstalk/evm-guides/your-first-crosschain-nft-contract
 
 
-## Smart contract 
+# Smart contract 
  
 **We are making an Education Dapp marketplace** I used  Decipher for the documentation, Below if the full description 
 
-# Education Marketplace Smart Contract
+### Education Marketplace Smart Contract
 
 ## Overview
 
