@@ -94,6 +94,12 @@ npm run dev
 6. Access the dApp:
 Open your web browser and visit http://localhost:3000 to interact with the EduDev application.
 
+## API Route
+
+A single API Route is responsible for creating a token for file uploads. Make sure to rename .env.example to .env and get your token as mentioned in the [Spheron Browser Upload Docs](https://docs.spheron.network/sdk/browser/).
+
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/upload.ts`.
+
 <br>
 
 ## 🔍The problem it solves
@@ -160,6 +166,12 @@ Please refer to the official page for a comprehensive explanation of the deploym
 **Here's the Full metadata stored in the browser SDK**
 
 ![Screenshot from 2023-09-17 17-34-41](https://github.com/DiveDev21/Edudev-Marketplace-Dappathon-Season-2/assets/85225156/9366c843-63b4-4fc3-9203-6f6761451f5a)
+
+## API Route
+
+A single API Route is responsible for creating a token for file uploads. Make sure to rename .env.example to .env and get your token as mentioned in the [Spheron Browser Upload Docs](https://docs.spheron.network/sdk/browser/).
+
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/upload.ts`.
 
 **Deployment in spheron**
 
