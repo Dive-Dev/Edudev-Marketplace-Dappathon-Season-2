@@ -57,7 +57,7 @@ Our vision is to create a global ecosystem that democratizes education, making i
     </tr>
     <tr>
       <td>spheron</td>
-      <td></td>
+      <td>http://edudev-learn-and-earn-platform-dappathon-seas-a4cfd3.spheron.app/</td>
     </tr>
   </table>
 </div>
