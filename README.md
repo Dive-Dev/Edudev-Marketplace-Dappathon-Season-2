@@ -122,6 +122,16 @@ The Dapp addresses several critical issues in the realm of education and online 
 
 ## 💥 Challenges we ran into
 
+**Smart contract:**
+- Building scalable smart contracts is a challenging task that requires hard work and dedication. Despite the difficulties, we were able to make it happen. Our main challenge was to make the contract dynamic and responsive to all users. For instance, if a user adds a course, it should only be visible on their dashboard, not to everyone who logs in to the DApp.
+
+- Additionally, we faced significant difficulties in enabling users to resell courses. We wanted to allow users to buy and sell courses at different prices, and we had to ensure that the marketplace displayed the new price, but only to the user. Making it dynamic and connecting it to the marketplace was a challenge.
+
+- Verifying our smart contract on the Polygon testnet was another particular challenge. We had to use BUNZZ decipher for documentation, so we spent several hours figuring it out. We eventually found a solution. We bundled our smart contract on Remix, which allowed us to deploy it on the Polygon testnet without providing ABI info and library information.
+
+**Frontend**
+- 
+- 
 
 <br>
 
