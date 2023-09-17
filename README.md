@@ -55,13 +55,6 @@ Our vision is to create a global ecosystem that democratizes education, making i
       <td>Vercel</td>
       <td> https://edudev-learn-and-earn-platform-dappathon-season-2.vercel.app/</td>
     </tr>
-    <tr>
-      <td>spheron</td>
-      <td></td>
-    </tr>
-  </table>
-</div>
-
 <br><br>
 
 ## 🚀 Setting up the project locally
@@ -305,7 +298,7 @@ The Education Marketplace Contract consists of several key components:
 
 ### Sell course 
 
-![Screenshot from 2023-09-17 18-50-05](https://github.com/DiveDev21/Edudev-Marketplace-Dappathon-Season-2/assets/85225156/be8d1411-fc09-4ed0-b768-ca46fc081018)
+![Screenshot from 2023-09-17 20-08-56](https://github.com/DiveDev21/Edudev-Marketplace-Dappathon-Season-2/assets/85225156/50e15a9b-1a1e-4b97-9877-d7986e28d03c)
 
 
 ### Review course 
