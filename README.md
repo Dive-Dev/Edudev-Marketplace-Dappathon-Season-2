@@ -1,4 +1,4 @@
-# Edudev-MarketPlace-Dappathon-Season-2
+# Edudev-Learn-and-earn-platform-Dappathon-Season-2
 
 ![Group 41](https://github.com/DiveDev21/Edudev-Learn-and-earn-platform-Dappathon-Season-2/assets/85225156/e70d5002-6b33-433e-ab6e-400766722aab)
 
@@ -119,6 +119,35 @@ The Dapp addresses several critical issues in the realm of education and online 
 <br>
 
 <a href = "#top">Back to top</a>
+
+
+## TRACK
+
+## Spheron
+
+It is a decentralized application platform (dApp) that allows developers to build, deploy, and scale their web applications on a global network of servers. Spheron aims to make it easier and more affordable for developers to launch their dApps, by providing them with access to a reliable and scalable infrastructure.
+
+Spheron offers a number of features that make it a popular choice for dApp developers, including:
+
+ - Easy deployment: Spheron makes it easy to deploy dApps with a few simple clicks. Developers can simply push their code to Spheron and their dApp will be up and running in minutes.
+ - Global reach: Spheron has a global network of servers, which means that dApps deployed on Spheron can be accessed by users from all over the world.
+ - Scalability: Spheron is designed to be scalable, so that dApps can handle even the highest traffic loads.
+- Affordability: Spheron is very affordable, with pricing that is significantly lower than traditional cloud hosting providers.
+
+
+**In this project we are using Spheron SDK for storing  the metadata and Spheron deployment for deploying our site **
+
+**Browser Upload SDK**
+
+
+The Spheron Browser Upload SDK is a JavaScript library that allows developers to upload files directly from the browser to IPFS, Filecoin, or Arweave. This makes it easy to build decentralized applications (dApps) that can store and share data in a secure and reliable way.
+
+To use the Spheron Browser Upload SDK, developers need to first generate an upload token. This can be done by creating a server endpoint that uses the Spheron Storage SDK. Once the upload token has been generated, developers can use it to upload files from their web application.
+
+
+![Screenshot from 2023-09-17 17-18-35](https://github.com/DiveDev21/Edudev-Marketplace-Dappathon-Season-2/assets/85225156/4812faf6-bf3c-4eb1-9b4e-ecfae7d38fdd)
+
+
 
 
 ## 💥 Working of the project
