@@ -329,9 +329,9 @@ The Education Marketplace Contract consists of several key components:
 | Hardhat | Ethereum development environment | https://hardhat.org/ |
 | Etherjs | Ethereum JavaScript API | 	https://docs.ethers.org/v5/ |
 | Polygon | Polygon (formerly known as Matic Network) is a Layer 2 scaling solution for Ethereum that enables faster and cheaper transactions on the blockchain. It leverages Ethereum as its main backbone while adding its own network of sidechains, allowing for efficient scaling and interoperability with other Ethereum-based systems. | https://polygon.technology/ |
-| Ipfs/Filecoin | Decentralized file storage and content distribution | https://ipfs.io/ & https://filecoin.io/ |
-| Repl it | Online code editor | https://repl.it/ |
-| Ethereum | 	Decentralized blockchain platform for building decentralized applications | https://ethereum.org/ |
+| Spheron | It is a decentralized application platform (dApp) that allows developers to build, deploy, and scale their web applications on a global network of servers. | https://spheron.network/ |
+| Bunzz | 	Buzz is a comprehensive platform that offers a smart ecosystem for managing and deploying smart contracts. | https://www.bunzz.dev/ |
+| Router | 	Decentralized blockchain platform for building Cross Chain decentralized applications |https://devnet-docs.routerprotocol.com/ |
 </h4>
 
 <be>
