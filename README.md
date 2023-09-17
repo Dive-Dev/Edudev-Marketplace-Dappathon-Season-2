@@ -55,13 +55,6 @@ Our vision is to create a global ecosystem that democratizes education, making i
       <td>Vercel</td>
       <td> https://edudev-learn-and-earn-platform-dappathon-season-2.vercel.app/</td>
     </tr>
-    <tr>
-      <td>spheron</td>
-      <td>http://edudev-learn-and-earn-platform-dappathon-seas-a4cfd3.spheron.app/</td>
-    </tr>
-  </table>
-</div>
-
 <br><br>
 
 ## 🚀 Setting up the project locally
