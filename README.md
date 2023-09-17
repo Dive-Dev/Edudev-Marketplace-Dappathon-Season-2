@@ -165,21 +165,21 @@ There are two types of deployment available in Spheron.
       - Configure the deployment settings. This includes the protocol that you want to use to deploy your static site (IPFS, Filecoin, or Arweave), the domain name that you want to use for your static site, and the HTTPS settings.
       **Deploy your static site.**
 
-        For detailed explain you can follow this blog written by me [static deployment](https://omega1.hashnode.dev/deploying-a-web3-application-on-the-spheron#clio55gc706uah7nv5ag13ctt?t=1686289369279)
+        For a detailed explanation you can follow this blog written by me [static deployment](https://omega1.hashnode.dev/deploying-a-web3-application-on-the-spheron#clio55gc706uah7nv5ag13ctt?t=1686289369279)
 
   - Dynamic deployment using Spheron compute
     
      - We are using API endpoint for storage  browser SDK so that's why we have to move into the dynamic deployment.
-          - The Spheron Browser Upload SDK is a JavaScript library that enables seamless uploading of files from the browser to IPFS, Filecoin, or Arweave. This simplifies the process of building decentralized applications (dApps) that             can securely and reliably store and share data. To use the SDK, developers first generate an upload token by creating a server endpoint that utilizes the Spheron Storage SDK. Once the upload token has been created,                      developers can conveniently upload files from their web application. The SDK offers various features to simplify the file-uploading process, including progress tracking, automatic error handling, and the ability to cancel               uploads at any time.
-
+    
     For dynamic deployment please follow this blog [Spheron dynamic deploymen](https://blog.spheron.network/deploy-your-nextjs-application-on-spheron-network-with-and-without-apis)
       - Dynamic deployment in the context of the Spheron blog post you linked to refers to the deployment of Next.js applications that use the Spheron Storage SDK to store and retrieve data. This allows developers to build Next.js     
         applications that can dynamically load and display data from decentralized storage networks, such as IPFS, Filecoin, and Arweave.
-        Dynamic deployment on Spheron offers a number of benefits, including:
+
+      - Dynamic deployment on Spheron offers a number of benefits, including:
 
           -  Decentralization: Dynamically deployed Next.js applications are decentralized, meaning that they are not hosted on any single server. This makes them more resistant to censorship and attack.
-          - Scalability: Dynamically deployed Next.js applications are scalable, meaning that they can be easily scaled to handle high traffic loads.
-          - Cost-effectiveness: Dynamically deployed Next.js applications are cost-effective, as they are hosted on decentralized storage networks that are typically more cost-effective than traditional hosting providers.
+          -  Scalability: Dynamically deployed Next.js applications are scalable, meaning that they can be easily scaled to handle high traffic loads.
+          -  Cost-effectiveness: Dynamically deployed Next.js applications are cost-effective, as they are hosted on decentralized storage networks that are typically more cost-effective than traditional hosting providers.
        
      
 
