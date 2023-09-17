@@ -205,8 +205,79 @@ Here's is the Bunzz decipher AI generated docs for smart contract
 
 
 
+## Router
 
-## 💥 Working on the project
+[Router](https://devnet-docs.routerprotocol.com/)
+
+We are not using this in our project due to less time but if someone want to   know about Router then can read this. 
+
+The Router chain is a layer 1 blockchain that leverages tendermint’s Byzantine Fault Tolerant (BFT) consensus engine. As a Proof of Stake (PoS) blockchain, the Router chain is primarily run by a network of validators with economic incentives to act honestly. The Router chain is built using the Cosmos SDK and encapsulates all the features of Cosmos, including fast block times, robust security mechanisms, and, most importantly, CosmWasm - a security-first smart contract platform. By leveraging the CosmWasm toolkit, developers can start building secure blockchain applications on the Router chain from scratch or port their existing applications to the Router chain with minimal overhead.
+
+ ####  In simple term let's suppose you have deployed ur nft or any dapp in polygon network then if any user don't have any matic in their wallet rather they have eth testnet then  with the helps  of router chain network he/she can  min or use the dapp with the eth testnet as well. 
+
+Here's is the full information about how can you build your first dapp using router https://devnet-docs.routerprotocol.com/develop/message-transfer-via-crosstalk/evm-guides/your-first-crosschain-nft-contract
+
+
+## Smart contract 
+ 
+**We are making an Education Dapp marketplace** I used  Decipher for the documentation, Below if the full description 
+
+# Education Marketplace Smart Contract
+
+## Overview
+
+The Education Marketplace Smart Contract is a blockchain-based solution designed to create, buy, and sell educational courses on the Ethereum blockchain. This document provides a comprehensive overview of the smart contract, its functionality, and key components.
+
+## Table of Contents
+
+- [Understanding Educational Courses](#understanding-educational-courses)
+- [Purpose of the Education Marketplace Contract](#purpose-of-the-education-marketplace-contract)
+- [Key Components of the Education Marketplace Contract](#key-components-of-the-education-marketplace-contract)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Understanding Educational Courses
+
+Educational courses in the context of the Education Marketplace are unique digital assets representing various learning materials and programs. Unlike cryptocurrencies like Bitcoin or Ethereum, educational courses are non-fungible, meaning each course is distinct and cannot be exchanged on a one-to-one basis. These courses can cover a wide range of subjects, including online tutorials, skill development programs, academic courses, and more.
+
+## Purpose of the Education Marketplace Contract
+
+The Education Marketplace Contract serves as a decentralized platform for educational content creators and students. Its primary functions are as follows:
+
+1. **Creating Courses:** Educators can mint new educational courses, assign them a unique course ID, and list them for sale in the marketplace.
+
+2. **Listing Courses for Sale:** Educators can list their courses for sale, setting a price in Ether (ETH), the native cryptocurrency of the Ethereum blockchain.
+
+3. **Enrolling in Courses:** Students can enroll in listed courses by sending the specified amount of Ether to the contract. Upon enrollment, they gain access to the course materials, and the course creator is compensated.
+
+## Key Components of the Education Marketplace Contract
+
+The Education Marketplace Contract consists of several key components:
+
+1. **State Variables:** These variables store the contract's current state, including the listing price, contract owner, and mappings linking course IDs to market items.
+
+2. **Structs:** Custom data structures, such as the `MarketItem` struct, group together information about each educational course, including its course ID, creator, owner, price, and whether it has been sold.
+
+3. **Events:** Ethereum events are used to log important activities on the blockchain, such as when a new course is listed for sale.
+
+4. **Functions:** These functions allow users to interact with the contract, including creating courses, listing courses for sale, enrolling in courses, and managing course listings.
+
+## Getting Started
+
+To get started with the Education Marketplace Smart Contract, follow these steps:
+
+1. [Install a compatible development environment](https://ethereum.org/greeter#development-environment).
+
+2. Clone this repository to your local machine.
+
+3. Install the necessary dependencies:
+
+   ```bash
+   npm install
+
+
 
 
 ## 🏁 How Our Project Aligns with the Following Hackathon Tracks 
