@@ -178,13 +178,35 @@ There are two types of deployment available in Spheron.
       - Dynamic deployment on Spheron offers a number of benefits, including:
 
           -  Decentralization: Dynamically deployed Next.js applications are decentralized, meaning that they are not hosted on any single server. This makes them more resistant to censorship and attack.
-          -  Scalability: Dynamically deployed Next.js applications are scalable, meaning that they can be easily scaled to handle high traffic loads.
-          -  Cost-effectiveness: Dynamically deployed Next.js applications are cost-effective, as they are hosted on decentralized storage networks that are typically more cost-effective than traditional hosting providers.
+          -  Scalability: Dynamically deployed Next.js applications are scalable, meaning that they can be easily scaled to handle high-traffic loads.
+          -  Cost-effectiveness: Dynamically deployed Next.js applications are cost-effective, as they are hosted on decentralized storage networks that are typically more cost effective than traditional hosting providers.
        
      
+## BUNZZ
+
+ We are  using BUNZZ decipher for smart contract documentation and it's very handy and useful.
+
+Buzz is a comprehensive platform that offers a smart ecosystem for managing and deploying smart contracts. With Bunzz, users can easily find, deploy, and manage reviewed contracts, making the process efficient and hassle-free.
+Key Features:
+  - Wide Range of Supported Chains: Bunzz supports over 100 chains, including popular ones like Ethereum, Polygon, Avalanche, BSC, and more. This allows users to deploy their contracts on their preferred EVM-compatible chain.
+  - AI-Generated Documentation: Bunzz's innovative feature, Bunzz DeCipher, provides AI-generated documentation for contracts. This ensures that users have clear and comprehensive documentation for their contracts, making them easier to understand and work with.
+  - Reviewed Contracts from Industry Experts: By using Bunzz, users gain access to a vast library of reviewed contracts created by industry experts. This ensures the reliability and security of the contracts, giving users peace of mind.
+  - Simplified Deployment: Bunzz simplifies the deployment process by providing an intuitive user interface. Users can easily deploy their contracts on any EVM chain without the need for extensive technical knowledge.
+  - Popular Contract Templates: Bunzz offers a collection of popular contract templates for various use cases, including NFTs, DeFi platforms, ERC20 tokens, and DAOs. These templates serve as a starting point for users, saving them time and effort in contract development.
+
+For a detailed explanation, you can  read this official blog: [Bunzz Decipher](https://blog.bunzz.dev/bunzz-integrates-chatgpt-based-smart-contracts-document-generation-ai-to-launch-decipher/)
 
 
-## 💥 Working of the project
+Here's the contract address link deployed on Polygon: https://mumbai.polygonscan.com/address/0xF2B8a621d0F517e9F756fDC2E69d2d70eB968174
+
+Here's is the Bunzz decipher AI generated docs for smart contract
+
+![Screenshot from 2023-09-17 18-29-35](https://github.com/DiveDev21/Edudev-Marketplace-Dappathon-Season-2/assets/85225156/477b44a4-9298-4b8a-aaf1-dbe3dfa37d49)
+
+
+
+
+## 💥 Working on the project
 
 
 ## 🏁 How Our Project Aligns with the Following Hackathon Tracks 
