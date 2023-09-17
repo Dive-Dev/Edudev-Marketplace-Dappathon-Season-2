@@ -25,8 +25,6 @@
 - [Project Gallery](#Project-Gallery)
 - [Technologies we used](#%EF%B8%8Ftechnologies-we-used)
 - [Future Improvement](#Future-Improvement)
-- [Proof](https://github.com/Vikash-8090-Yadav/SaL--dApp)
-  
 - [Video Demo](#-video-demo)
 - [Contributing](#-contributing)
 
