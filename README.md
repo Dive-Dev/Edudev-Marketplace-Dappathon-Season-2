@@ -237,10 +237,6 @@ The Education Marketplace Smart Contract is a blockchain-based solution designed
 - [Understanding Educational Courses](#understanding-educational-courses)
 - [Purpose of the Education Marketplace Contract](#purpose-of-the-education-marketplace-contract)
 - [Key Components of the Education Marketplace Contract](#key-components-of-the-education-marketplace-contract)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Understanding Educational Courses
 
@@ -268,26 +264,37 @@ The Education Marketplace Contract consists of several key components:
 
 4. **Functions:** These functions allow users to interact with the contract, including creating courses, listing courses for sale, enrolling in courses, and managing course listings.
 
-## Getting Started
-
-To get started with the Education Marketplace Smart Contract, follow these steps:
-
-1. [Install a compatible development environment](https://ethereum.org/greeter#development-environment).
-
-2. Clone this repository to your local machine.
-
-3. Install the necessary dependencies:
-
-   ```bash
-   npm install
 
 
 
 
-## 🏁 How Our Project Aligns with the Following Hackathon Tracks 
+# Project Gallery
+
+### Home Page
+
+![Screenshot from 2023-09-17 19-03-01](https://github.com/DiveDev21/Edudev-Marketplace-Dappathon-Season-2/assets/85225156/e56025aa-cb95-4fcc-b319-c022b77c88cc)
 
 
+### Marketplace 
 
+![Screenshot from 2023-09-17 18-59-00](https://github.com/DiveDev21/Edudev-Marketplace-Dappathon-Season-2/assets/85225156/0465272b-889c-44bf-944e-4a700514f86d)
+
+
+### Sell course 
+
+![Screenshot from 2023-09-17 18-50-05](https://github.com/DiveDev21/Edudev-Marketplace-Dappathon-Season-2/assets/85225156/be8d1411-fc09-4ed0-b768-ca46fc081018)
+
+
+### Review course 
+![Screenshot from 2023-09-17 18-59-36](https://github.com/DiveDev21/Edudev-Marketplace-Dappathon-Season-2/assets/85225156/d174fa72-4329-4dd3-a41f-5ff224078d1f)
+
+
+### Dashboard 
+![Screenshot from 2023-09-17 19-00-13](https://github.com/DiveDev21/Edudev-Marketplace-Dappathon-Season-2/assets/85225156/e7c9504e-d670-482a-9e58-0895ce74a828)
+
+
+### MY course 
+![Screenshot from 2023-09-17 19-02-04](https://github.com/DiveDev21/Edudev-Marketplace-Dappathon-Season-2/assets/85225156/bb73f9d7-7cad-4375-a63e-70268d177712)
 
 
 ## 🛠️Technologies we used
@@ -312,7 +319,10 @@ To get started with the Education Marketplace Smart Contract, follow these steps
 | Ethereum | 	Decentralized blockchain platform for building decentralized applications | https://ethereum.org/ |
 </h4>
 
-<br>
+<be>
+
+## Future improvement
+
 
 ## 🎥 Video Demo
 
