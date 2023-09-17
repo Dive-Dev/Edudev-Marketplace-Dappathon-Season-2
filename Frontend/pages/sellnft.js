@@ -194,7 +194,7 @@ const [file, setFile] = useState(null);
           <div className="md:w-1/2 bg-black flex flex-col justify-center items-center">
             <h2 className='text-3xl mb-4 text-white'>Add your details</h2>
             <div>
-              <p className='text-justify px-4 text-white'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <p className='text-justify px-4 text-white'>Congratulations on taking the step to share your knowledge with the world! As you provide the details for your course, remember that you're not just creating content; you're building opportunities for others to learn and grow. Your course will be a valuable addition to our marketplace, opening doors for eager learners. Thank you for being a part of our educational community</p>
             </div>
           </div>
           <div className="md:w-1/2 py-10 px-12">
