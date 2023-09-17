@@ -17,7 +17,7 @@
 - [Installation](#-setting-up-the-project-locally)
 - [The problem it solves](#the-problem-it-solves)
 - [Challenges we ran into](#-challenges-we-ran-into)
-- [TRACK](#-how-our-project-aligns-with-the-following-hackathon-tracks)
+- [TRACK](#TRACK)
   - [SPheron](#-ipfsfilecoin)
   - [BUNZZ](#%EF%B8%8F-ethereum)
   - [ROUTER](#%EF%B8%8F-replit)
